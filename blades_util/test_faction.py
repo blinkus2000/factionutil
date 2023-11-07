@@ -10,7 +10,7 @@ JSON_PATH = 'factions.json'
 TEST_JSON_PATH = 'test_factions.json'
 
 
-def cleanup_test_path(self):
+def cleanup_test_path():
     if os.path.exists(TEST_JSON_PATH):
         os.remove(TEST_JSON_PATH)
 
@@ -21,7 +21,7 @@ class TestFaction:
     def factions(self):
         return load_factions(JSON_PATH)
 
-    @pytest.fixture
+    @pytest.fixture(autouse=True)
     def cleanup_before_after(self):
         print(f'cleaning up {TEST_JSON_PATH} if it exists on setup')
         cleanup_test_path()
