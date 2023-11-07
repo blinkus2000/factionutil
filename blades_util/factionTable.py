@@ -2,7 +2,7 @@
 
 import random
 import numpy as np
-from blades_util.relationshipTable import RelationshipTable, opinionIndexer, getOpinionModifier
+from blades_util.relationshipTable import RelationshipTable
 from blades_util.faction import load_factions
 from typing import Dict
 
