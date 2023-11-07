@@ -3,7 +3,7 @@ import pytest
 from blades_util.factionTable import FactionTable
 from blades_util.factionManager import FactionManager
 
-# Assuming you have a test JSON file with test factions
+# Assuming you have a test JSON file with test factions.
 TEST_JSON_PATH = 'factions.json'
 
 
