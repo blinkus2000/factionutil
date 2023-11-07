@@ -1,6 +1,7 @@
 import json
 import re
 
+
 def parseToJSON(src, dest):
     # Regular expression to match the pattern "name (rating): description"
     # The description can span multiple sentences, so we capture everything up to the final period.
@@ -22,10 +23,6 @@ def parseToJSON(src, dest):
     # Write the data to the destination JSON file
     with open(dest, 'w', encoding='utf-8') as file:
         json.dump(data, file, indent=4, ensure_ascii=False)
-
-
-
-
 
 # Example usage:
 # parseToJSON('faction.txt', 'factions.json')

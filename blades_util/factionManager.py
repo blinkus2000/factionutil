@@ -138,7 +138,7 @@ class FactionManager:
         # Return the list of faction actions
         return faction_actions
 
-    def run_faction_actions(self) -> List[str]:
+    def run_faction_actions(self) -> Tuple[List[str],List[float]]:
         self.decay_acted_count()
         actions = self.build_faction_actions()
         results = []

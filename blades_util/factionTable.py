@@ -3,14 +3,14 @@
 import random
 import numpy as np
 from blades_util.relationshipTable import RelationshipTable
-from blades_util.faction import load_factions
+from blades_util.faction import load_factions, FactionDict
 from typing import Dict
 
 
 class FactionTable:
     def __init__(self, factions_json_path: str,table: RelationshipTable = None):
         # Load factions from JSON and create a list of faction names
-        self.factions = load_factions(factions_json_path)
+        self.factions: FactionDict = load_factions(factions_json_path)
         self.faction_names = list(self.factions.keys())
         if table is not None:
             self.relationship_table = table
