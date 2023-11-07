@@ -8,13 +8,15 @@ from typing import Dict
 
 
 class FactionTable:
-    def __init__(self, factions_json_path: str):
+    def __init__(self, factions_json_path: str,table: RelationshipTable = None):
         # Load factions from JSON and create a list of faction names
         self.factions = load_factions(factions_json_path)
         self.faction_names = list(self.factions.keys())
-
-        # Initialize the relationship table with faction names
-        self.relationship_table = RelationshipTable(self.faction_names)
+        if table is not None:
+            self.relationship_table = table
+        else:
+            # Initialize the relationship table with faction names
+            self.relationship_table = RelationshipTable(self.faction_names)
 
     def update_faction_opinion(self, acting_faction_name, target_faction_name, opinion_change):
         # Update the opinion of one faction about another
