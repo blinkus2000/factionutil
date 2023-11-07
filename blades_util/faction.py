@@ -1,20 +1,17 @@
 import json
+from collections import UserDict
 from dataclasses import dataclass, field
 from typing import Dict
-
-# Initialize the rating table as a global variable
-RATING_TABLE: Dict['Faction', int] = {}
-ACTION_TABLE: Dict['Faction', int] = {}
 
 
 @dataclass(frozen=True)
 class Faction:
     name: str
     description: str
+    faction_dict: 'FactionDict'
     _hash: int = field(init=False, repr=False)
 
     def __post_init__(self):
-        # Precompute the hash once since the object is immutable
         object.__setattr__(self, '_hash', hash((self.name, self.description)))
 
     def __hash__(self):
@@ -25,54 +22,62 @@ class Faction:
             return self._hash == other._hash
         return False
 
-    def rating(self):
-        # Accessor method for rating
-        return RATING_TABLE[self]
+    def rating(self) -> int:
+        return self.faction_dict.rating(self)
 
-    def set_rating(self, value):
-        RATING_TABLE[self] = value
+    def action(self) -> int:
+        return self.faction_dict.action(self)
 
-    def action(self):
-        # Accessor method for rating
-        return ACTION_TABLE[self]
+    def set_rating(self, rating: int):
+        self.faction_dict.set_rating(self, rating)
 
-    def set_action(self, value):
-        ACTION_TABLE[self] = value
+    def set_action(self, action: int):
+        self.faction_dict.set_action(self, action)
 
 
-def load_factions_raw_data(name: str, rating: int, action: int, description: str) -> Faction:
-    # Create the Faction instance
-    faction = Faction(name=name, description=description)
-    # Set the rating in the RATING_TABLE
-    RATING_TABLE[faction] = rating
-    ACTION_TABLE[faction] = action
-    return faction
+class FactionDict(UserDict):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.rating_table: Dict[Faction, int] = {}
+        self.action_table: Dict[Faction, int] = {}
+
+    def action(self, faction: Faction) -> int:
+        return self.action_table.get(faction, 0)
+
+    def rating(self, faction: Faction) -> int:
+        return self.rating_table.get(faction, 0)
+
+    def set_action(self, faction: Faction, value: int):
+        self.action_table[faction] = value
+
+    def set_rating(self, faction: Faction, value: int):
+        self.rating_table[faction] = value
 
 
-def load_factions(json_path: str) -> Dict[str, Faction]:
+# Now you can use FactionDict in place of the previous global variables
+def load_factions(json_path: str) -> FactionDict:
     with open(json_path, 'r', encoding='utf-8') as file:
         factions_data = json.load(file)
 
-    factions = {faction['name']: load_factions_raw_data(name=faction['name'],
-                                                        rating=int(faction['rating']),
-                                                        action=int(faction['action']),
-                                                        description=faction['description'])
-                for faction in factions_data}
+    factions = FactionDict()
+    for faction_info in factions_data:
+        faction = Faction(name=faction_info['name'], description=faction_info['description'], faction_dict=factions)
+        factions[faction.name] = faction
+        factions.set_rating(faction, int(faction_info['rating']))
+        factions.set_action(faction, int(faction_info['action']))
     return factions
 
 
-def save_factions(json_path: str, factions_to_save: Dict[str, Faction]) -> None:
-    # Prepare data for JSON serialization
+def save_factions(json_path: str, factions: FactionDict) -> None:
     factions_data = [
         {
-            "name": faction.name,
-            "rating": faction.rating(),
-            "action": faction.action(),
+            "name": name,
+            "rating": factions.rating(faction),
+            "action": factions.action(faction),
             "description": faction.description
         }
-        for faction in factions_to_save.values()
+        for name, faction in factions.items()
     ]
 
-    # Write the data to a JSON file
     with open(json_path, 'w', encoding='utf-8') as file:
         json.dump(factions_data, file, ensure_ascii=False, indent=4)
