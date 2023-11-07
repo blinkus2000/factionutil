@@ -59,3 +59,20 @@ def load_factions(json_path: str) -> Dict[str, Faction]:
                                                         description=faction['description'])
                 for faction in factions_data}
     return factions
+
+
+def save_factions(json_path: str, factions_to_save: Dict[str, Faction]) -> None:
+    # Prepare data for JSON serialization
+    factions_data = [
+        {
+            "name": faction.name,
+            "rating": faction.rating(),
+            "action": faction.action(),
+            "description": faction.description
+        }
+        for faction in factions_to_save.values()
+    ]
+
+    # Write the data to a JSON file
+    with open(json_path, 'w', encoding='utf-8') as file:
+        json.dump(factions_data, file, ensure_ascii=False, indent=4)

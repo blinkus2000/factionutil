@@ -10,17 +10,17 @@ TEST_JSON_PATH = 'factions.json'
 class TestFactionManager:
     @pytest.fixture
     def faction_table(self):
-        # Setup the FactionTable with a path to the test JSON
+        # Set up the FactionTable with a path to the test JSON
         return FactionTable(TEST_JSON_PATH)
 
     @pytest.fixture
     def manager(self, faction_table):
-        # Setup the FactionManager with the faction table
+        # Set up the FactionManager with the faction table
         return FactionManager(faction_table)
 
     @pytest.fixture
     def factions(self, faction_table):
-        # Setup the factions with the faction table
+        # Set up the factions with the faction table
         return faction_table.factions
 
     def test_initialize_weights(self, manager):
