@@ -1,14 +1,16 @@
 import tkinter as tk
 
 from blades_util.ui.controller import Controller
+from blades_util.ui.model import Model
 
 
 class Buttons:
 
 
-    def __init__(self, c: Controller, r: tk.Tk):
+    def __init__(self, c: Controller,m: Model, r: tk.Tk):
         self.root = r
         self.controller = c
+        self.model = m
 
     def build_buttons(self):
         button_save = tk.Button(self.root, text="Save", command=self.handle_save)
@@ -37,15 +39,16 @@ class Buttons:
         print("Act On Selected button pressed")
 
     def handle_regenerate(self):
-        pass
+        self.model.update_current_manager(self.controller.generate_new_manager())
 
     def handle_advance_week(self):
-        print("Advance Week button pressed")
+        self.model.update_current_manager(name=None,
+                                          factions= self.controller.advance_one_week())
 
 
 root = tk.Tk()
 
 if __name__ == "__main__":
     app = tk.Tk()
-    Buttons(Controller(), root)
+    Buttons(Controller(), Model(), app)
     app.mainloop()
