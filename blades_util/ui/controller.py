@@ -59,7 +59,7 @@ class Controller:
         return self.manager.faction_table.relationship_table.table.copy()
     #used to populate the available managers selectable list
     def get_available_managers(self) -> List[str]:
-        current_dir = Path(".")
+        current_dir = Path("..")
         # List comprehension to filter, transform, and collect directory names
         return_val = [model_dir.name[len("manager_"):] for model_dir in current_dir.iterdir()
                       if model_dir.is_dir() and model_dir.name.startswith("manager_")]
