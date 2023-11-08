@@ -1,4 +1,3 @@
-import csv
 from typing import Callable, Dict, Tuple, List, IO
 
 OPINION_MODIFIERS = {
@@ -18,34 +17,6 @@ def opinionIndexer(opinion: float) -> int:
 
 def getOpinionModifier(opinion: float) -> float:
     return OPINION_MODIFIERS.get(opinionIndexer(opinion), 0)
-
-
-def save_to(table: 'RelationshipTable', csv_file: IO[str]) -> None:
-    writer = csv.writer(csv_file)
-    # Write the header
-    writer.writerow(['Source', 'Target', 'Opinion'])
-    # Write the data
-    for (source, target), opinion in table.table.items():
-        writer.writerow([source, target, opinion])
-
-
-def load_from(csv_file: IO[str]) -> 'RelationshipTable':
-    reader = csv.reader(csv_file)
-    # Skip the header
-    next(reader, None)
-    # Initialize an empty RelationshipTable
-    keys: List[str] = []
-    table_data: Dict[Tuple[str, str], float] = {}
-    for row in reader:
-        source, target, opinion = row
-        keys.extend([source, target])
-        table_data[(source, target)] = float(opinion)
-    # Remove duplicates from keys
-    unique_keys = list(set(keys))
-    # Create a new RelationshipTable
-    new_table = RelationshipTable(unique_keys)
-    new_table.table = table_data
-    return new_table
 
 
 class RelationshipTable:
@@ -115,3 +86,12 @@ class RelationshipTable:
             if key != meKey:
                 my_opinions_about_others[key] = self.get(meKey, key)
         return my_opinions_about_others
+
+    def __eq__(self, other):
+        if not isinstance(other, RelationshipTable):
+            return NotImplemented
+        return self.table.__eq__(other.table) and set(self.keys).__eq__(set(other.keys))
+
+    def __hash__(self):
+        # Hashing the frozenset of the keys and the frozenset of items ensures that the order does not matter.
+        return hash((frozenset(self.keys), frozenset(self.table.items())))
