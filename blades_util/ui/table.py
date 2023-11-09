@@ -2,26 +2,44 @@ import tkinter as tk
 from tkinter import ttk
 
 from blades_util.ui.controller import Controller
+from blades_util.ui.model import Model
 from blades_util.utils import convert_dict, get_row_as_list
 
 
-class Table():
-    def __init__(self, c: Controller, r: tk.Tk):
+class Table:
+    def __init__(self, c: Controller, m: Model, r: tk.Tk):
         super().__init__()
+        self.faction_tuple = None
+        self.factions = None
         self.root = r
         self.controller = c
-        self.name, self.dict_data = self.controller.generate_new_manager()
-        self.root.title(self.name)
+        self.model = m
+
+        self.name = None
+        self.dict_data = None
+
         self.root.tree = None
+        self.create_table_from_data(self.controller.generate_new_manager())
+        self.model.set_current_manager_holder(self.create_table_from_data)
+
+    def create_table_from_data(self, manager_data: tuple[str, dict[tuple[str, str], float]]):
+        self.name, self.dict_data = manager_data
+        if self.name:
+            self.root.title(self.name)
         self.factions = convert_dict(self.dict_data)
         self.faction_tuple = tuple(self.factions)
         style = ttk.Style(self.root)
         style.configure("Treeview.Heading", font=('Helvetica', 8))  # Set a smaller font size
-
         self.create_table()
 
     def create_table(self):
-        self.root.tree = ttk.Treeview(self.root)
+        if self.root.tree is not None:
+            # Clear the existing treeview
+            for i in self.root.tree.get_children():
+                self.root.tree.delete(i)
+        else:
+            # Treeview has not been created yet, so create it
+            self.root.tree = ttk.Treeview(self.root)
 
         # Define columns
         faction_tuple = ('faction_name',) + self.faction_tuple
@@ -62,10 +80,10 @@ class Table():
         selected_items = self.root.tree.selection()  # This returns the selected items' IDs
         for item_id in selected_items:
             item = self.root.tree.item(item_id)
-            print("You selected:", item['values'][0])  # This will print the values of the selected row
+            self.model.set_selected(item['values'][0])
 
 
 if __name__ == "__main__":
     root = tk.Tk()
-    Table(Controller(), root)
+    Table(Controller(), Model(), root)
     root.mainloop()

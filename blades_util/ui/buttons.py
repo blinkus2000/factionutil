@@ -6,8 +6,7 @@ from blades_util.ui.model import Model
 
 class Buttons:
 
-
-    def __init__(self, c: Controller,m: Model, r: tk.Tk):
+    def __init__(self, c: Controller, m: Model, r: tk.Tk):
         self.root = r
         self.controller = c
         self.model = m
@@ -32,18 +31,22 @@ class Buttons:
         self.controller.save_manager()
 
     def handle_save_as(self):
-        new_manager_name = None  # give me a popup for a string input
+        new_manager_name = None  # give me a popup for a string input named "Enter New Manager Name:"
         self.controller.save_manager_as(new_manager_name)
 
     def handle_act_on_selected(self):
-        print("Act On Selected button pressed")
+        faction_str: str = self.model.get_selected()
+        if faction_str:
+            value: int = 0  # give me a popup for an int input using a spinner "Select Adjustment:"
+            if value != 0:
+                self.controller.player_adjust_faction(faction_str, value)
 
     def handle_regenerate(self):
         self.model.update_current_manager(self.controller.generate_new_manager())
 
     def handle_advance_week(self):
         self.model.update_current_manager(name=None,
-                                          factions= self.controller.advance_one_week())
+                                          factions=self.controller.advance_one_week())
 
 
 root = tk.Tk()
