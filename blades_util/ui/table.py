@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 
-from blades_util.ui.controller import Controller
+from blades_util.controller import Controller
 from blades_util.ui.model import Model
 from blades_util.utils import convert_dict, get_row_as_list
 

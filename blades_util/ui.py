@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 
-from blades_util.ui.controller import Controller
+from blades_util.controller import Controller
 
 
 class FactionManagerUI(tk.Tk):
