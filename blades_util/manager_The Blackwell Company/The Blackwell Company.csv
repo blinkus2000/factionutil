@@ -9,7 +9,7 @@ The Billhooks,The Crows,1.0
 The Billhooks,Cyphers,0.0
 The Billhooks,Deathlands Scavengers,1.8295081882576874
 The Billhooks,The Dimmer Sisters,0.09007792559006023
-The Billhooks,Dockers,0.0
+The Billhooks,Dockers,-0.75
 The Billhooks,The Fog Hounds,-2.0
 The Billhooks,The Forgotten Gods,0.0
 The Billhooks,The Foundation,0.0
@@ -28,11 +28,11 @@ The Billhooks,Lord Scurlock,-1.0
 The Billhooks,The Lost,0.0
 The Billhooks,Ministry of Preservation,0.0
 The Billhooks,The Path of Echoes,-1.0
-The Billhooks,Rail Jacks,-3
+The Billhooks,Rail Jacks,-3.0
 The Billhooks,The Reconciled,0.0
 The Billhooks,The Red Sashes,0.0
 The Billhooks,Sailors,-0.5711842288558933
-The Billhooks,The Silver Nails,-1.0
+The Billhooks,The Silver Nails,-0.9806406192296659
 The Billhooks,Skovlander Refugees,0.0
 The Billhooks,Sparkwrights,0.8860233165133609
 The Billhooks,Spirit Wardens,0.0
@@ -82,7 +82,7 @@ The Brigade,Ulf Ironborn,0.0
 The Brigade,The Unseen,0.0
 The Brigade,The Weeping Lady,-1.0
 The Brigade,The Wraiths,0.0
-The Brigade,The Players,1.0
+The Brigade,The Players,-1.0
 Bluecoats,The Billhooks,0.5
 Bluecoats,The Brigade,-1.0
 Bluecoats,Bluecoats,0.0
@@ -93,7 +93,7 @@ Bluecoats,The Crows,0.0
 Bluecoats,Cyphers,0.0
 Bluecoats,Deathlands Scavengers,-0.6098360627525625
 Bluecoats,The Dimmer Sisters,0.0
-Bluecoats,Dockers,-1.0
+Bluecoats,Dockers,-0.75
 Bluecoats,The Fog Hounds,0.0
 Bluecoats,The Forgotten Gods,0.0
 Bluecoats,The Foundation,-1.0
@@ -124,7 +124,7 @@ Bluecoats,Ulf Ironborn,0.0
 Bluecoats,The Unseen,0.08538549712117671
 Bluecoats,The Weeping Lady,0.0
 Bluecoats,The Wraiths,0.0
-Bluecoats,The Players,0.0
+Bluecoats,The Players,0.75
 Cabbies,The Billhooks,-1.0
 Cabbies,The Brigade,0.0
 Cabbies,Bluecoats,0.0
@@ -166,7 +166,7 @@ Cabbies,Ulf Ironborn,0.18636024925465744
 Cabbies,The Unseen,0.0
 Cabbies,The Weeping Lady,1.0
 Cabbies,The Wraiths,1.0
-Cabbies,The Players,0.0
+Cabbies,The Players,-0.25
 The Church of the Ecstasy of the Flesh,The Billhooks,0.0
 The Church of the Ecstasy of the Flesh,The Brigade,1.0
 The Church of the Ecstasy of the Flesh,Bluecoats,0.0
@@ -219,14 +219,14 @@ The Circle of Flame,The Crows,-0.3355701899468069
 The Circle of Flame,Cyphers,-0.06256076283642653
 The Circle of Flame,Deathlands Scavengers,-0.6098360627525625
 The Circle of Flame,The Dimmer Sisters,-1.0
-The Circle of Flame,Dockers,0.0
+The Circle of Flame,Dockers,0.25
 The Circle of Flame,The Fog Hounds,0.0
 The Circle of Flame,The Forgotten Gods,0.0
 The Circle of Flame,The Foundation,0.0
 The Circle of Flame,Gondoliers,0.0
 The Circle of Flame,The Gray Cloaks,-1.0
 The Circle of Flame,The Grinders,0.0
-The Circle of Flame,The Hive,-1.0
+The Circle of Flame,The Hive,-0.9717674994296969
 The Circle of Flame,The Horde,0.0
 The Circle of Flame,Imperial Military,0.0
 The Circle of Flame,Ink Rakes,1.0
@@ -250,7 +250,7 @@ The Circle of Flame,Ulf Ironborn,0.7454409970186298
 The Circle of Flame,The Unseen,1.0853854971211767
 The Circle of Flame,The Weeping Lady,-1.0
 The Circle of Flame,The Wraiths,0.0
-The Circle of Flame,The Players,0.0
+The Circle of Flame,The Players,-0.5
 The Crows,The Billhooks,-1.0
 The Crows,The Brigade,0.0
 The Crows,Bluecoats,0.0
@@ -261,7 +261,7 @@ The Crows,The Crows,0.0
 The Crows,Cyphers,0.06256076283642653
 The Crows,Deathlands Scavengers,1.219672125505125
 The Crows,The Dimmer Sisters,0.3603117023602409
-The Crows,Dockers,0.0
+The Crows,Dockers,-0.25
 The Crows,The Fog Hounds,0.0
 The Crows,The Forgotten Gods,0.0
 The Crows,The Foundation,0.0
@@ -292,7 +292,7 @@ The Crows,Ulf Ironborn,0.6272795014906851
 The Crows,The Unseen,-0.17077099424235342
 The Crows,The Weeping Lady,0.0
 The Crows,The Wraiths,0.0
-The Crows,The Players,0.0
+The Crows,The Players,-0.5
 Cyphers,The Billhooks,0.0
 Cyphers,The Brigade,0.0
 Cyphers,Bluecoats,0.0
@@ -310,7 +310,7 @@ Cyphers,The Foundation,0.0
 Cyphers,Gondoliers,0.0
 Cyphers,The Gray Cloaks,0.0
 Cyphers,The Grinders,-1.25
-Cyphers,The Hive,-2.0
+Cyphers,The Hive,-1.971767499429697
 Cyphers,The Horde,0.0
 Cyphers,Imperial Military,0.0
 Cyphers,Ink Rakes,2.0
@@ -326,7 +326,7 @@ Cyphers,Rail Jacks,0.0
 Cyphers,The Reconciled,-2.0
 Cyphers,The Red Sashes,-1.0
 Cyphers,Sailors,0.0
-Cyphers,The Silver Nails,-1.0
+Cyphers,The Silver Nails,-1.019359380770334
 Cyphers,Skovlander Refugees,-1.0
 Cyphers,Sparkwrights,0.0
 Cyphers,Spirit Wardens,-1.0
@@ -334,7 +334,7 @@ Cyphers,Ulf Ironborn,-1.1863602492546574
 Cyphers,The Unseen,0.0
 Cyphers,The Weeping Lady,1.0
 Cyphers,The Wraiths,1.0
-Cyphers,The Players,1.0
+Cyphers,The Players,0.75
 Deathlands Scavengers,The Billhooks,0.0
 Deathlands Scavengers,The Brigade,0.0
 Deathlands Scavengers,Bluecoats,-2.0
@@ -345,7 +345,7 @@ Deathlands Scavengers,The Crows,-0.08389254748670172
 Deathlands Scavengers,Cyphers,-0.06256076283642653
 Deathlands Scavengers,Deathlands Scavengers,0.0
 Deathlands Scavengers,The Dimmer Sisters,-2.0
-Deathlands Scavengers,Dockers,-1.0
+Deathlands Scavengers,Dockers,-0.5
 Deathlands Scavengers,The Fog Hounds,0.0
 Deathlands Scavengers,The Forgotten Gods,0.0
 Deathlands Scavengers,The Foundation,1.0
@@ -387,14 +387,14 @@ The Dimmer Sisters,The Crows,2.0
 The Dimmer Sisters,Cyphers,0.0
 The Dimmer Sisters,Deathlands Scavengers,1.6098360627525625
 The Dimmer Sisters,The Dimmer Sisters,0.0
-The Dimmer Sisters,Dockers,-2.0
+The Dimmer Sisters,Dockers,-2.25
 The Dimmer Sisters,The Fog Hounds,0.0
 The Dimmer Sisters,The Forgotten Gods,0.0
 The Dimmer Sisters,The Foundation,1.0
 The Dimmer Sisters,Gondoliers,1.0
 The Dimmer Sisters,The Gray Cloaks,0.0
 The Dimmer Sisters,The Grinders,0.0
-The Dimmer Sisters,The Hive,0.0
+The Dimmer Sisters,The Hive,-0.028232500570303132
 The Dimmer Sisters,The Horde,0.0
 The Dimmer Sisters,Imperial Military,1.0
 The Dimmer Sisters,Ink Rakes,-0.1348272982638805
@@ -410,7 +410,7 @@ The Dimmer Sisters,Rail Jacks,-1.1558473052251346
 The Dimmer Sisters,The Reconciled,-0.30402884390641094
 The Dimmer Sisters,The Red Sashes,0.0
 The Dimmer Sisters,Sailors,-0.3927960572139733
-The Dimmer Sisters,The Silver Nails,0.03379368482609135
+The Dimmer Sisters,The Silver Nails,0.05315306559642541
 The Dimmer Sisters,Skovlander Refugees,0.0
 The Dimmer Sisters,Sparkwrights,0.0
 The Dimmer Sisters,Spirit Wardens,1.0
@@ -460,7 +460,7 @@ Dockers,Ulf Ironborn,0.18636024925465744
 Dockers,The Unseen,0.17077099424235342
 Dockers,The Weeping Lady,0.0
 Dockers,The Wraiths,-1.0
-Dockers,The Players,0.0
+Dockers,The Players,0.25
 The Fog Hounds,The Billhooks,0.0
 The Fog Hounds,The Brigade,1.0
 The Fog Hounds,Bluecoats,1.0
@@ -494,7 +494,7 @@ The Fog Hounds,Rail Jacks,0.0
 The Fog Hounds,The Reconciled,-0.15201442195320547
 The Fog Hounds,The Red Sashes,-1.0
 The Fog Hounds,Sailors,0.0
-The Fog Hounds,The Silver Nails,0.0
+The Fog Hounds,The Silver Nails,0.03871876154066811
 The Fog Hounds,Skovlander Refugees,0.0
 The Fog Hounds,Sparkwrights,0.0
 The Fog Hounds,Spirit Wardens,0.0
@@ -502,7 +502,7 @@ The Fog Hounds,Ulf Ironborn,2.1863602492546574
 The Fog Hounds,The Unseen,0.0
 The Fog Hounds,The Weeping Lady,0.0
 The Fog Hounds,The Wraiths,0.0
-The Fog Hounds,The Players,0.0
+The Fog Hounds,The Players,-0.25
 The Forgotten Gods,The Billhooks,-0.5
 The Forgotten Gods,The Brigade,0.0
 The Forgotten Gods,Bluecoats,-1.0
@@ -513,7 +513,7 @@ The Forgotten Gods,The Crows,0.0
 The Forgotten Gods,Cyphers,0.06256076283642653
 The Forgotten Gods,Deathlands Scavengers,-0.3901639372474375
 The Forgotten Gods,The Dimmer Sisters,0.0
-The Forgotten Gods,Dockers,1.0
+The Forgotten Gods,Dockers,0.75
 The Forgotten Gods,The Fog Hounds,0.0
 The Forgotten Gods,The Forgotten Gods,0.0
 The Forgotten Gods,The Foundation,-1.0
@@ -555,14 +555,14 @@ The Foundation,The Crows,0.0
 The Foundation,Cyphers,0.0
 The Foundation,Deathlands Scavengers,0.6098360627525625
 The Foundation,The Dimmer Sisters,-2.0
-The Foundation,Dockers,1.0
+The Foundation,Dockers,0.75
 The Foundation,The Fog Hounds,-2.0
 The Foundation,The Forgotten Gods,0.0
 The Foundation,The Foundation,0.0
 The Foundation,Gondoliers,0.018994294331014516
 The Foundation,The Gray Cloaks,-1.0
 The Foundation,The Grinders,0.0
-The Foundation,The Hive,0.0
+The Foundation,The Hive,0.028232500570303132
 The Foundation,The Horde,1.0
 The Foundation,Imperial Military,0.0
 The Foundation,Ink Rakes,0.0
@@ -578,7 +578,7 @@ The Foundation,Rail Jacks,-1.0
 The Foundation,The Reconciled,0.15201442195320547
 The Foundation,The Red Sashes,0.0
 The Foundation,Sailors,0.0
-The Foundation,The Silver Nails,-0.016896842413045676
+The Foundation,The Silver Nails,-0.03625622318337973
 The Foundation,Skovlander Refugees,-1.0
 The Foundation,Sparkwrights,-1.0
 The Foundation,Spirit Wardens,-1.0
@@ -586,7 +586,7 @@ The Foundation,Ulf Ironborn,-1.0
 The Foundation,The Unseen,-0.08538549712117671
 The Foundation,The Weeping Lady,2.0
 The Foundation,The Wraiths,1.0
-The Foundation,The Players,0.0
+The Foundation,The Players,-0.75
 Gondoliers,The Billhooks,0.0
 Gondoliers,The Brigade,0.0
 Gondoliers,Bluecoats,0.0
@@ -604,7 +604,7 @@ Gondoliers,The Foundation,0.0
 Gondoliers,Gondoliers,0.0
 Gondoliers,The Gray Cloaks,0.0
 Gondoliers,The Grinders,0.0
-Gondoliers,The Hive,0.0
+Gondoliers,The Hive,-0.028232500570303132
 Gondoliers,The Horde,-1.0
 Gondoliers,Imperial Military,1.0
 Gondoliers,Ink Rakes,1.0
@@ -620,7 +620,7 @@ Gondoliers,Rail Jacks,0.0
 Gondoliers,The Reconciled,0.0
 Gondoliers,The Red Sashes,0.0
 Gondoliers,Sailors,0.0
-Gondoliers,The Silver Nails,0.0
+Gondoliers,The Silver Nails,0.019359380770334056
 Gondoliers,Skovlander Refugees,0.0
 Gondoliers,Sparkwrights,-2.0
 Gondoliers,Spirit Wardens,1.0
@@ -628,7 +628,7 @@ Gondoliers,Ulf Ironborn,1.0
 Gondoliers,The Unseen,0.0
 Gondoliers,The Weeping Lady,0.0
 Gondoliers,The Wraiths,-1.0
-Gondoliers,The Players,0.0
+Gondoliers,The Players,0.25
 The Gray Cloaks,The Billhooks,-0.5
 The Gray Cloaks,The Brigade,1.0
 The Gray Cloaks,Bluecoats,-1.0
@@ -639,14 +639,14 @@ The Gray Cloaks,The Crows,-1.0
 The Gray Cloaks,Cyphers,0.0
 The Gray Cloaks,Deathlands Scavengers,0.6098360627525625
 The Gray Cloaks,The Dimmer Sisters,-1.0900779255900601
-The Gray Cloaks,Dockers,-1.0
+The Gray Cloaks,Dockers,-1.25
 The Gray Cloaks,The Fog Hounds,0.0
 The Gray Cloaks,The Forgotten Gods,0.0
 The Gray Cloaks,The Foundation,-1.0
 The Gray Cloaks,Gondoliers,1.0
 The Gray Cloaks,The Gray Cloaks,0.0
 The Gray Cloaks,The Grinders,-1.0
-The Gray Cloaks,The Hive,0.0
+The Gray Cloaks,The Hive,0.028232500570303132
 The Gray Cloaks,The Horde,0.0
 The Gray Cloaks,Imperial Military,1.0
 The Gray Cloaks,Ink Rakes,2.1348272982638807
@@ -670,7 +670,7 @@ The Gray Cloaks,Ulf Ironborn,0.0
 The Gray Cloaks,The Unseen,-0.08538549712117671
 The Gray Cloaks,The Weeping Lady,0.0
 The Gray Cloaks,The Wraiths,0.0
-The Gray Cloaks,The Players,0.0
+The Gray Cloaks,The Players,1.75
 The Grinders,The Billhooks,-0.5
 The Grinders,The Brigade,0.0
 The Grinders,Bluecoats,-1.0
@@ -681,7 +681,7 @@ The Grinders,The Crows,0.7483223575398948
 The Grinders,Cyphers,1.0
 The Grinders,Deathlands Scavengers,1.8295081882576874
 The Grinders,The Dimmer Sisters,1.0900779255900601
-The Grinders,Dockers,0.0
+The Grinders,Dockers,-0.75
 The Grinders,The Fog Hounds,0.0
 The Grinders,The Forgotten Gods,0.0
 The Grinders,The Foundation,0.0
@@ -700,7 +700,7 @@ The Grinders,Lord Scurlock,0.0
 The Grinders,The Lost,0.0
 The Grinders,Ministry of Preservation,0.0
 The Grinders,The Path of Echoes,1.0
-The Grinders,Rail Jacks,-3
+The Grinders,Rail Jacks,-3.0
 The Grinders,The Reconciled,1.0
 The Grinders,The Red Sashes,0.0
 The Grinders,Sailors,-0.3927960572139733
@@ -712,7 +712,7 @@ The Grinders,Ulf Ironborn,0.5590807477639723
 The Grinders,The Unseen,-0.25615649136353014
 The Grinders,The Weeping Lady,0.0
 The Grinders,The Wraiths,-1.0
-The Grinders,The Players,0.0
+The Grinders,The Players,-0.25
 The Hive,The Billhooks,0.0
 The Hive,The Brigade,0.0
 The Hive,Bluecoats,0.0
@@ -814,7 +814,7 @@ Imperial Military,The Foundation,0.0
 Imperial Military,Gondoliers,0.0
 Imperial Military,The Gray Cloaks,0.0
 Imperial Military,The Grinders,-0.25
-Imperial Military,The Hive,1.0
+Imperial Military,The Hive,0.9717674994296969
 Imperial Military,The Horde,0.0
 Imperial Military,Imperial Military,0.0
 Imperial Military,Ink Rakes,-1.0
@@ -838,7 +838,7 @@ Imperial Military,Ulf Ironborn,-0.18636024925465744
 Imperial Military,The Unseen,0.0
 Imperial Military,The Weeping Lady,0.0
 Imperial Military,The Wraiths,0.0
-Imperial Military,The Players,0.0
+Imperial Military,The Players,0.25
 Ink Rakes,The Billhooks,0.0
 Ink Rakes,The Brigade,0.0
 Ink Rakes,Bluecoats,-1.0
@@ -856,7 +856,7 @@ Ink Rakes,The Foundation,0.0
 Ink Rakes,Gondoliers,-0.018994294331014516
 Ink Rakes,The Gray Cloaks,0.0
 Ink Rakes,The Grinders,0.0
-Ink Rakes,The Hive,0.0
+Ink Rakes,The Hive,0.028232500570303132
 Ink Rakes,The Horde,0.0
 Ink Rakes,Imperial Military,1.0
 Ink Rakes,Ink Rakes,0.0
@@ -872,7 +872,7 @@ Ink Rakes,Rail Jacks,0.0
 Ink Rakes,The Reconciled,1.0
 Ink Rakes,The Red Sashes,0.0
 Ink Rakes,Sailors,0.0
-Ink Rakes,The Silver Nails,0.008448421206522838
+Ink Rakes,The Silver Nails,-0.010910959563811218
 Ink Rakes,Skovlander Refugees,0.0
 Ink Rakes,Sparkwrights,1.0
 Ink Rakes,Spirit Wardens,-1.0
@@ -880,7 +880,7 @@ Ink Rakes,Ulf Ironborn,-1.0
 Ink Rakes,The Unseen,0.0
 Ink Rakes,The Weeping Lady,0.0
 Ink Rakes,The Wraiths,1.0
-Ink Rakes,The Players,0.25
+Ink Rakes,The Players,0.0
 Inspectors,The Billhooks,-0.5
 Inspectors,The Brigade,-1.0
 Inspectors,Bluecoats,-1.0
@@ -891,7 +891,7 @@ Inspectors,The Crows,0.0
 Inspectors,Cyphers,1.0
 Inspectors,Deathlands Scavengers,0.6098360627525625
 Inspectors,The Dimmer Sisters,0.0
-Inspectors,Dockers,-1.0
+Inspectors,Dockers,-1.25
 Inspectors,The Fog Hounds,1.0
 Inspectors,The Forgotten Gods,-1.0
 Inspectors,The Foundation,0.0
@@ -922,7 +922,7 @@ Inspectors,Ulf Ironborn,0.0
 Inspectors,The Unseen,0.9146145028788233
 Inspectors,The Weeping Lady,0.0
 Inspectors,The Wraiths,0.0
-Inspectors,The Players,0.0
+Inspectors,The Players,0.25
 Ironhook Prison,The Billhooks,-1.0
 Ironhook Prison,The Brigade,-1.0
 Ironhook Prison,Bluecoats,-1.0
@@ -933,7 +933,7 @@ Ironhook Prison,The Crows,0.0
 Ironhook Prison,Cyphers,-0.06256076283642653
 Ironhook Prison,Deathlands Scavengers,1.219672125505125
 Ironhook Prison,The Dimmer Sisters,0.0
-Ironhook Prison,Dockers,-1.0
+Ironhook Prison,Dockers,-1.25
 Ironhook Prison,The Fog Hounds,-1.0
 Ironhook Prison,The Forgotten Gods,-1.0
 Ironhook Prison,The Foundation,0.0
@@ -964,7 +964,7 @@ Ironhook Prison,Ulf Ironborn,0.0
 Ironhook Prison,The Unseen,0.8292290057576466
 Ironhook Prison,The Weeping Lady,0.0
 Ironhook Prison,The Wraiths,0.0
-Ironhook Prison,The Players,0.0
+Ironhook Prison,The Players,0.75
 The Lampblacks,The Billhooks,0.5
 The Lampblacks,The Brigade,0.0
 The Lampblacks,Bluecoats,0.0
@@ -975,7 +975,7 @@ The Lampblacks,The Crows,1.0
 The Lampblacks,Cyphers,0.0
 The Lampblacks,Deathlands Scavengers,-0.3901639372474375
 The Lampblacks,The Dimmer Sisters,0.09007792559006023
-The Lampblacks,Dockers,0.0
+The Lampblacks,Dockers,-0.25
 The Lampblacks,The Fog Hounds,0.0
 The Lampblacks,The Forgotten Gods,0.0
 The Lampblacks,The Foundation,0.0
@@ -1006,7 +1006,7 @@ The Lampblacks,Ulf Ironborn,0.0
 The Lampblacks,The Unseen,-0.08538549712117671
 The Lampblacks,The Weeping Lady,0.0
 The Lampblacks,The Wraiths,1.0
-The Lampblacks,The Players,1.0
+The Lampblacks,The Players,0.75
 Leviathan Hunters,The Billhooks,-0.5
 Leviathan Hunters,The Brigade,0.0
 Leviathan Hunters,Bluecoats,0.0
@@ -1017,7 +1017,7 @@ Leviathan Hunters,The Crows,1.0
 Leviathan Hunters,Cyphers,-0.06256076283642653
 Leviathan Hunters,Deathlands Scavengers,-0.6098360627525625
 Leviathan Hunters,The Dimmer Sisters,0.09007792559006023
-Leviathan Hunters,Dockers,0.0
+Leviathan Hunters,Dockers,0.25
 Leviathan Hunters,The Fog Hounds,-2.0
 Leviathan Hunters,The Forgotten Gods,2.0
 Leviathan Hunters,The Foundation,1.0
@@ -1040,7 +1040,7 @@ Leviathan Hunters,Rail Jacks,1.1558473052251346
 Leviathan Hunters,The Reconciled,0.0
 Leviathan Hunters,The Red Sashes,2.0
 Leviathan Hunters,Sailors,0.3927960572139733
-Leviathan Hunters,The Silver Nails,1.0
+Leviathan Hunters,The Silver Nails,0.9806406192296659
 Leviathan Hunters,Skovlander Refugees,0.0
 Leviathan Hunters,Sparkwrights,0.8860233165133609
 Leviathan Hunters,Spirit Wardens,0.0
@@ -1090,7 +1090,7 @@ Lord Scurlock,Ulf Ironborn,0.0
 Lord Scurlock,The Unseen,0.0
 Lord Scurlock,The Weeping Lady,-1.0
 Lord Scurlock,The Wraiths,0.0
-Lord Scurlock,The Players,0.0
+Lord Scurlock,The Players,-0.25
 The Lost,The Billhooks,0.0
 The Lost,The Brigade,0.0
 The Lost,Bluecoats,1.0
@@ -1108,7 +1108,7 @@ The Lost,The Foundation,0.0
 The Lost,Gondoliers,1.0
 The Lost,The Gray Cloaks,0.0
 The Lost,The Grinders,-1.0
-The Lost,The Hive,1.0
+The Lost,The Hive,0.9717674994296969
 The Lost,The Horde,1.0
 The Lost,Imperial Military,0.0
 The Lost,Ink Rakes,0.8651727017361195
@@ -1132,7 +1132,7 @@ The Lost,Ulf Ironborn,0.0
 The Lost,The Unseen,0.0
 The Lost,The Weeping Lady,0.0
 The Lost,The Wraiths,1.0
-The Lost,The Players,1.25
+The Lost,The Players,1.0
 Ministry of Preservation,The Billhooks,-0.5
 Ministry of Preservation,The Brigade,0.0
 Ministry of Preservation,Bluecoats,0.0
@@ -1143,7 +1143,7 @@ Ministry of Preservation,The Crows,0.0
 Ministry of Preservation,Cyphers,1.0
 Ministry of Preservation,Deathlands Scavengers,-0.6098360627525625
 Ministry of Preservation,The Dimmer Sisters,0.0
-Ministry of Preservation,Dockers,-1.0
+Ministry of Preservation,Dockers,-0.75
 Ministry of Preservation,The Fog Hounds,0.0
 Ministry of Preservation,The Forgotten Gods,-1.0
 Ministry of Preservation,The Foundation,0.0
@@ -1174,7 +1174,7 @@ Ministry of Preservation,Ulf Ironborn,0.0
 Ministry of Preservation,The Unseen,1.0853854971211767
 Ministry of Preservation,The Weeping Lady,1.0
 Ministry of Preservation,The Wraiths,1.0
-Ministry of Preservation,The Players,-1.0
+Ministry of Preservation,The Players,-1.25
 The Path of Echoes,The Billhooks,0.0
 The Path of Echoes,The Brigade,0.0
 The Path of Echoes,Bluecoats,0.0
@@ -1216,8 +1216,8 @@ The Path of Echoes,Ulf Ironborn,0.0
 The Path of Echoes,The Unseen,-2.0
 The Path of Echoes,The Weeping Lady,0.0
 The Path of Echoes,The Wraiths,0.0
-The Path of Echoes,The Players,0.0
-Rail Jacks,The Billhooks,3
+The Path of Echoes,The Players,0.5
+Rail Jacks,The Billhooks,3.0
 Rail Jacks,The Brigade,0.0
 Rail Jacks,Bluecoats,0.0
 Rail Jacks,Cabbies,0.0
@@ -1227,7 +1227,7 @@ Rail Jacks,The Crows,-1.0
 Rail Jacks,Cyphers,-1.0
 Rail Jacks,Deathlands Scavengers,-2.43934425101025
 Rail Jacks,The Dimmer Sisters,-1.0900779255900601
-Rail Jacks,Dockers,0.0
+Rail Jacks,Dockers,1.0
 Rail Jacks,The Fog Hounds,0.0
 Rail Jacks,The Forgotten Gods,0.0
 Rail Jacks,The Foundation,0.0
@@ -1250,7 +1250,7 @@ Rail Jacks,Rail Jacks,0.0
 Rail Jacks,The Reconciled,0.0
 Rail Jacks,The Red Sashes,0.0
 Rail Jacks,Sailors,-1.7855921144279465
-Rail Jacks,The Silver Nails,-1.0084484212065228
+Rail Jacks,The Silver Nails,-0.9890890404361887
 Rail Jacks,Skovlander Refugees,0.0
 Rail Jacks,Sparkwrights,0.0
 Rail Jacks,Spirit Wardens,-0.06182237663755169
@@ -1292,7 +1292,7 @@ The Reconciled,Rail Jacks,0.0
 The Reconciled,The Reconciled,0.0
 The Reconciled,The Red Sashes,-1.0
 The Reconciled,Sailors,0.0
-The Reconciled,The Silver Nails,-0.008448421206522838
+The Reconciled,The Silver Nails,0.010910959563811218
 The Reconciled,Skovlander Refugees,0.0
 The Reconciled,Sparkwrights,0.0
 The Reconciled,Spirit Wardens,0.0
@@ -1300,7 +1300,7 @@ The Reconciled,Ulf Ironborn,1.0
 The Reconciled,The Unseen,0.0
 The Reconciled,The Weeping Lady,0.0
 The Reconciled,The Wraiths,0.0
-The Reconciled,The Players,1.0
+The Reconciled,The Players,0.5
 The Red Sashes,The Billhooks,-1.0
 The Red Sashes,The Brigade,0.0
 The Red Sashes,Bluecoats,0.0
@@ -1311,14 +1311,14 @@ The Red Sashes,The Crows,0.0
 The Red Sashes,Cyphers,0.0
 The Red Sashes,Deathlands Scavengers,1.219672125505125
 The Red Sashes,The Dimmer Sisters,0.0
-The Red Sashes,Dockers,0.0
+The Red Sashes,Dockers,-0.25
 The Red Sashes,The Fog Hounds,0.0
 The Red Sashes,The Forgotten Gods,0.0
 The Red Sashes,The Foundation,1.0
 The Red Sashes,Gondoliers,-1.0189942943310144
 The Red Sashes,The Gray Cloaks,0.0
 The Red Sashes,The Grinders,0.0
-The Red Sashes,The Hive,0.0
+The Red Sashes,The Hive,-0.028232500570303132
 The Red Sashes,The Horde,-1.0
 The Red Sashes,Imperial Military,0.0
 The Red Sashes,Ink Rakes,-1.0
@@ -1334,7 +1334,7 @@ The Red Sashes,Rail Jacks,-1.9209669039216846
 The Red Sashes,The Reconciled,0.0
 The Red Sashes,The Red Sashes,0.0
 The Red Sashes,Sailors,0.0
-The Red Sashes,The Silver Nails,0.0
+The Red Sashes,The Silver Nails,-0.019359380770334056
 The Red Sashes,Skovlander Refugees,0.0
 The Red Sashes,Sparkwrights,1.0
 The Red Sashes,Spirit Wardens,1.0
@@ -1395,7 +1395,7 @@ The Silver Nails,The Crows,0.0
 The Silver Nails,Cyphers,0.0
 The Silver Nails,Deathlands Scavengers,0.3901639372474375
 The Silver Nails,The Dimmer Sisters,2.0
-The Silver Nails,Dockers,0.0
+The Silver Nails,Dockers,0.25
 The Silver Nails,The Fog Hounds,0.0
 The Silver Nails,The Forgotten Gods,0.0
 The Silver Nails,The Foundation,0.0
@@ -1426,7 +1426,7 @@ The Silver Nails,Ulf Ironborn,2.0
 The Silver Nails,The Unseen,0.08538549712117671
 The Silver Nails,The Weeping Lady,0.0
 The Silver Nails,The Wraiths,-1.0
-The Silver Nails,The Players,-0.25
+The Silver Nails,The Players,-0.5
 Skovlander Refugees,The Billhooks,0.5
 Skovlander Refugees,The Brigade,0.0
 Skovlander Refugees,Bluecoats,0.0
@@ -1437,14 +1437,14 @@ Skovlander Refugees,The Crows,0.0
 Skovlander Refugees,Cyphers,0.0
 Skovlander Refugees,Deathlands Scavengers,-0.6098360627525625
 Skovlander Refugees,The Dimmer Sisters,0.0
-Skovlander Refugees,Dockers,0.0
+Skovlander Refugees,Dockers,0.25
 Skovlander Refugees,The Fog Hounds,0.0
 Skovlander Refugees,The Forgotten Gods,0.0
 Skovlander Refugees,The Foundation,0.0
 Skovlander Refugees,Gondoliers,-0.9810057056689855
 Skovlander Refugees,The Gray Cloaks,1.0
 Skovlander Refugees,The Grinders,0.0
-Skovlander Refugees,The Hive,0.0
+Skovlander Refugees,The Hive,-0.028232500570303132
 Skovlander Refugees,The Horde,0.0
 Skovlander Refugees,Imperial Military,0.0
 Skovlander Refugees,Ink Rakes,1.0
@@ -1468,7 +1468,7 @@ Skovlander Refugees,Ulf Ironborn,0.0
 Skovlander Refugees,The Unseen,0.08538549712117671
 Skovlander Refugees,The Weeping Lady,0.0
 Skovlander Refugees,The Wraiths,0.0
-Skovlander Refugees,The Players,1.0
+Skovlander Refugees,The Players,1.5
 Sparkwrights,The Billhooks,-0.5
 Sparkwrights,The Brigade,0.0
 Sparkwrights,Bluecoats,0.0
@@ -1479,7 +1479,7 @@ Sparkwrights,The Crows,-0.9161074525132983
 Sparkwrights,Cyphers,0.9374392371635735
 Sparkwrights,Deathlands Scavengers,0.6098360627525625
 Sparkwrights,The Dimmer Sisters,-1.0900779255900601
-Sparkwrights,Dockers,-1.0
+Sparkwrights,Dockers,-1.25
 Sparkwrights,The Fog Hounds,0.0
 Sparkwrights,The Forgotten Gods,0.0
 Sparkwrights,The Foundation,0.0
@@ -1510,7 +1510,7 @@ Sparkwrights,Ulf Ironborn,-0.18636024925465744
 Sparkwrights,The Unseen,-0.08538549712117671
 Sparkwrights,The Weeping Lady,-1.0
 Sparkwrights,The Wraiths,-1.0
-Sparkwrights,The Players,0.0
+Sparkwrights,The Players,0.25
 Spirit Wardens,The Billhooks,0.0
 Spirit Wardens,The Brigade,-1.0
 Spirit Wardens,Bluecoats,1.0
@@ -1528,7 +1528,7 @@ Spirit Wardens,The Foundation,0.0
 Spirit Wardens,Gondoliers,-2.0
 Spirit Wardens,The Gray Cloaks,1.0
 Spirit Wardens,The Grinders,0.0
-Spirit Wardens,The Hive,0.0
+Spirit Wardens,The Hive,-0.11293000228121253
 Spirit Wardens,The Horde,0.0
 Spirit Wardens,Imperial Military,-1.0
 Spirit Wardens,Ink Rakes,-0.1348272982638805
@@ -1552,7 +1552,7 @@ Spirit Wardens,Ulf Ironborn,0.0
 Spirit Wardens,The Unseen,-1.0
 Spirit Wardens,The Weeping Lady,0.0
 Spirit Wardens,The Wraiths,2.0
-Spirit Wardens,The Players,0.0
+Spirit Wardens,The Players,0.25
 Ulf Ironborn,The Billhooks,0.0
 Ulf Ironborn,The Brigade,0.0
 Ulf Ironborn,Bluecoats,0.0
@@ -1586,7 +1586,7 @@ Ulf Ironborn,Rail Jacks,0.0
 Ulf Ironborn,The Reconciled,-1.0
 Ulf Ironborn,The Red Sashes,0.0
 Ulf Ironborn,Sailors,0.0
-Ulf Ironborn,The Silver Nails,0.0
+Ulf Ironborn,The Silver Nails,0.07743752308133622
 Ulf Ironborn,Skovlander Refugees,-1.0
 Ulf Ironborn,Sparkwrights,0.0
 Ulf Ironborn,Spirit Wardens,0.0
@@ -1605,7 +1605,7 @@ The Unseen,The Crows,0.0
 The Unseen,Cyphers,-0.06256076283642653
 The Unseen,Deathlands Scavengers,1.219672125505125
 The Unseen,The Dimmer Sisters,1.0
-The Unseen,Dockers,0.0
+The Unseen,Dockers,-0.5
 The Unseen,The Fog Hounds,0.0
 The Unseen,The Forgotten Gods,-1.0
 The Unseen,The Foundation,-2.0
@@ -1654,7 +1654,7 @@ The Weeping Lady,The Foundation,0.0
 The Weeping Lady,Gondoliers,1.0
 The Weeping Lady,The Gray Cloaks,-1.0
 The Weeping Lady,The Grinders,-1.0
-The Weeping Lady,The Hive,0.0
+The Weeping Lady,The Hive,-0.028232500570303132
 The Weeping Lady,The Horde,0.0
 The Weeping Lady,Imperial Military,-1.0
 The Weeping Lady,Ink Rakes,1.1348272982638805
@@ -1678,7 +1678,7 @@ The Weeping Lady,Ulf Ironborn,0.0
 The Weeping Lady,The Unseen,0.0
 The Weeping Lady,The Weeping Lady,0.0
 The Weeping Lady,The Wraiths,1.0
-The Weeping Lady,The Players,-1.0
+The Weeping Lady,The Players,-1.5
 The Wraiths,The Billhooks,0.5
 The Wraiths,The Brigade,0.0
 The Wraiths,Bluecoats,0.0
@@ -1689,14 +1689,14 @@ The Wraiths,The Crows,0.0
 The Wraiths,Cyphers,0.0
 The Wraiths,Deathlands Scavengers,1.6098360627525625
 The Wraiths,The Dimmer Sisters,0.0
-The Wraiths,Dockers,1.0
+The Wraiths,Dockers,0.75
 The Wraiths,The Fog Hounds,0.0
 The Wraiths,The Forgotten Gods,0.0
 The Wraiths,The Foundation,0.0
 The Wraiths,Gondoliers,0.0
 The Wraiths,The Gray Cloaks,-1.0
 The Wraiths,The Grinders,0.0
-The Wraiths,The Hive,0.0
+The Wraiths,The Hive,0.028232500570303132
 The Wraiths,The Horde,0.0
 The Wraiths,Imperial Military,0.0
 The Wraiths,Ink Rakes,0.0
@@ -1712,7 +1712,7 @@ The Wraiths,Rail Jacks,-1.1558473052251346
 The Wraiths,The Reconciled,0.15201442195320547
 The Wraiths,The Red Sashes,2.0
 The Wraiths,Sailors,-0.3927960572139733
-The Wraiths,The Silver Nails,0.0
+The Wraiths,The Silver Nails,0.03871876154066811
 The Wraiths,Skovlander Refugees,1.0
 The Wraiths,Sparkwrights,0.8860233165133609
 The Wraiths,Spirit Wardens,-1.0
@@ -1720,7 +1720,7 @@ The Wraiths,Ulf Ironborn,2.0
 The Wraiths,The Unseen,-0.08538549712117671
 The Wraiths,The Weeping Lady,0.0
 The Wraiths,The Wraiths,0.0
-The Wraiths,The Players,0.0
+The Wraiths,The Players,-1.5
 The Players,The Billhooks,0.0
 The Players,The Brigade,0.0
 The Players,Bluecoats,-1.0
@@ -1731,7 +1731,7 @@ The Players,The Crows,0.0
 The Players,Cyphers,0.0
 The Players,Deathlands Scavengers,1.219672125505125
 The Players,The Dimmer Sisters,0.0
-The Players,Dockers,2.0
+The Players,Dockers,1.5
 The Players,The Fog Hounds,0.0
 The Players,The Forgotten Gods,0.0
 The Players,The Foundation,0.0
@@ -1754,7 +1754,7 @@ The Players,Rail Jacks,-2.1558473052251346
 The Players,The Reconciled,0.30402884390641094
 The Players,The Red Sashes,0.0
 The Players,Sailors,-0.3927960572139733
-The Players,The Silver Nails,0.0
+The Players,The Silver Nails,-0.019359380770334056
 The Players,Skovlander Refugees,0.0
 The Players,Sparkwrights,0.0
 The Players,Spirit Wardens,0.0

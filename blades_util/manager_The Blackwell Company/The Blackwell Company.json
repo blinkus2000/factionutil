@@ -2,7 +2,7 @@
     {
         "name": "The Billhooks",
         "rating": 2,
-        "action": 2,
+        "action": 1,
         "description": "A tough gang of thugs wielding hatchets and meat hooks."
     },
     {
@@ -38,19 +38,19 @@
     {
         "name": "The Crows",
         "rating": 2,
-        "action": 1,
+        "action": 0,
         "description": "An old gang with new leadership. Known for running illegal games of chance and extortion rackets."
     },
     {
         "name": "Cyphers",
         "rating": 2,
-        "action": 3,
+        "action": 2,
         "description": "The messenger guild of the city. Cyphers swear sacred oaths of secrecy—never revealing the contents of their messages or the identities of their clients—or so they claim."
     },
     {
         "name": "Deathlands Scavengers",
         "rating": 2,
-        "action": 1,
+        "action": 0,
         "description": "Convicts from Ironhook and desperate freelancers who roam the wasteland beyond the lightning barriers."
     },
     {
@@ -62,7 +62,7 @@
     {
         "name": "Dockers",
         "rating": 3,
-        "action": 0,
+        "action": 2,
         "description": "The hard-bitten laborers who work the docks."
     },
     {
@@ -104,7 +104,7 @@
     {
         "name": "The Hive",
         "rating": 4,
-        "action": 0,
+        "action": 2,
         "description": "A guild of merchants who secretly trade in contraband. Named for their symbol, a golden bee."
     },
     {
@@ -122,19 +122,19 @@
     {
         "name": "Ink Rakes",
         "rating": 2,
-        "action": 1,
+        "action": 0,
         "description": "The journalists, muckrakers, and newspaper publishers of Doskvol."
     },
     {
         "name": "Inspectors",
         "rating": 3,
-        "action": 1,
+        "action": 0,
         "description": "The criminal investigators of the City Watch. They have a reputation for ethics and integrity (no one likes them). They present evidence for prosecutions to the city magistrates."
     },
     {
         "name": "Ironhook Prison",
         "rating": 4,
-        "action": 2,
+        "action": 1,
         "description": "Where many scoundrels spend the bulk of their lives. Several criminal organizations are run by convicts inside its walls."
     },
     {
@@ -176,7 +176,7 @@
     {
         "name": "Rail Jacks",
         "rating": 2,
-        "action": 2,
+        "action": 1,
         "description": "The men and women who protect the electro-trains of the imperium from the savage spirits of the deathlands. Have recently been making noises about forming a union."
     },
     {
@@ -200,7 +200,7 @@
     {
         "name": "The Silver Nails",
         "rating": 3,
-        "action": 0,
+        "action": 2,
         "description": "A company of Severosi mercenaries turned to crime when the war for Skovlan Unity ended. Renowned ghost killers."
     },
     {
@@ -212,7 +212,7 @@
     {
         "name": "Sparkwrights",
         "rating": 4,
-        "action": 2,
+        "action": 1,
         "description": "The engineers who maintain the lightning barriers. Also pioneers of new technology, often indulging in dangerous research."
     },
     {

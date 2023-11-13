@@ -9,6 +9,7 @@ from blades_util.utils import convert_dict, get_row_as_list
 class Table:
     def __init__(self, c: Controller, m: Model, r: tk.Frame):
         super().__init__()
+        self.style = None
         self.hsb = None
         self.faction_tuple = None
         self.factions = None
@@ -30,8 +31,8 @@ class Table:
         self.dict_data = manager_data
         self.factions = convert_dict(self.dict_data)
         self.faction_tuple = tuple(self.factions)
-        style = ttk.Style(self.frame)
-        style.configure("Treeview.Heading", font=('Helvetica', 8))  # Set a smaller font size
+        self.style = ttk.Style(self.frame)
+        self.style.configure("Treeview.Heading", font=('Helvetica', 8))  # Set a smaller font size
         self.create_table()
 
     def create_table(self):
@@ -70,13 +71,13 @@ class Table:
         for faction in self.factions:
             self.frame.tree.heading(faction, text=faction, anchor=tk.CENTER)
             self.frame.tree.column(faction, width=len(faction) * char_width, anchor=tk.CENTER)
-
+            #if the faction str == "The Players" I would like to set the background of that cell to be orange
         # Add data to the treeview
         for faction in self.factions:
             as_list = get_row_as_list(faction, self.dict_data)
             row = (faction,) + tuple(as_list)
             self.frame.tree.insert("", tk.END, values=row)
-
+            # if the faction str == "The Players" I would like to set the background of that cell to be orange
         self.frame.tree.pack(side='left', fill='both', expand=True)
         self.frame.tree.bind('<<TreeviewSelect>>', self.on_select)
 
