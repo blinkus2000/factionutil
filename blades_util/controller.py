@@ -13,7 +13,8 @@ def get_files_from_name(name):
     parent_dir.mkdir(parents=True, exist_ok=True)  # Create the directory if it doesn't exist
     json_file = parent_dir / f"{name}.json"
     csv_file = parent_dir / f"{name}.csv"
-    return csv_file, json_file
+    events_file = parent_dir / f"{name} events.txt"
+    return csv_file, json_file, events_file
 
 
 class Controller:
@@ -38,22 +39,32 @@ class Controller:
         return faction_table.relationship_table.table.copy()
 
     # there will be a safeAs button that will popup for a manger name, this will repopulate the available managers selectable list
-    def save_manager_as(self, name: str) -> None:
+    def save_manager_as(self, name: str, results: list[str] = None) -> None:
         self.manager_name = name
-        self.save_manager()
+        self.save_manager(results)
 
     # there will be a save button that will save the current manager as is
-    def save_manager(self):
-        csv_file, json_file = get_files_from_name(self.manager_name)
+    def save_manager(self, results: list[str] = None):
+        if results:
+            self.manager.saved_results = results
+        csv_file, json_file, events_file = get_files_from_name(self.manager_name)
         # Assuming save_faction_manager is a method that takes the manager instance,
         # and paths to the json and csv files as strings.
-        save_faction_manager(self.manager, json_file.as_posix(), csv_file.as_posix())
+        save_faction_manager(self.manager, json_file.as_posix(), csv_file.as_posix(), events_file.as_posix())
+        if self.manager.saved_results:
+            text_to_write = '\n'.join(self.manager.saved_results)
+            events_file.write_text(text_to_write, encoding='utf-8')
 
     # from the list of available managers (populated by get_available_managers()) if a player selects that manager, it will repopulate the grid
     def load_manager(self, name: str) -> Dict[Tuple[str, str], float]:
-        csv_file, json_file = get_files_from_name(name)
+        csv_file, json_file, text_file = get_files_from_name(name)
         self.manager = get_faction_manager(json_file.as_posix(), csv_file.as_posix())
         self.manager_name = name
+        try:
+            splitlines = text_file.read_text(encoding='utf-8').splitlines()
+        except:
+            splitlines = []
+        self.manager.saved_results: list[str] = splitlines
         return self.manager.faction_table.relationship_table.table.copy()
 
     # used to populate the available managers selectable list

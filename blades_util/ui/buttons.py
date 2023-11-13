@@ -33,6 +33,7 @@ class Buttons:
         button_advance_week.pack(side=tk.TOP, fill=tk.X)
 
     def handle_save(self):
+        self.controller.manager.saved_results = self.model.current_output_list
         self.controller.save_manager()
 
     def handle_save_as(self):
@@ -46,6 +47,7 @@ class Buttons:
         if self.model.selected_manager:
             faction= self.controller.load_manager(self.model.selected_manager)
             self.model.update_current_manager(self.model.selected_manager, faction)
+            self.model.current_output(self.controller.manager.saved_results)
         else:
             msg.showerror("No Manager Selected!", "Please Select A Manager")
 
@@ -58,7 +60,7 @@ class Buttons:
             popup.geometry("200x100")  # Adjust the size as needed
 
             # Create a Spinbox for integer input
-            spinbox = tk.Spinbox(popup, from_=-10, to=10, increment=1)
+            spinbox = tk.Spinbox(popup, from_=-10, to=10, increment=1, value=0)
             spinbox.pack(pady=10)
 
             # Function to handle the confirmation

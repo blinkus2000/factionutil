@@ -2,7 +2,7 @@
     {
         "name": "The Billhooks",
         "rating": 2,
-        "action": 1,
+        "action": 0,
         "description": "A tough gang of thugs wielding hatchets and meat hooks."
     },
     {
@@ -44,7 +44,7 @@
     {
         "name": "Cyphers",
         "rating": 2,
-        "action": 2,
+        "action": 0,
         "description": "The messenger guild of the city. Cyphers swear sacred oaths of secrecy—never revealing the contents of their messages or the identities of their clients—or so they claim."
     },
     {
@@ -62,7 +62,7 @@
     {
         "name": "Dockers",
         "rating": 3,
-        "action": 2,
+        "action": 0,
         "description": "The hard-bitten laborers who work the docks."
     },
     {
@@ -86,7 +86,7 @@
     {
         "name": "Gondoliers",
         "rating": 3,
-        "action": 0,
+        "action": 1,
         "description": "The guild of canal boat operators. Venerated by ancient tradition. Said to know occult secrets (many things are submerged in the Dusk)."
     },
     {
@@ -104,7 +104,7 @@
     {
         "name": "The Hive",
         "rating": 4,
-        "action": 2,
+        "action": 0,
         "description": "A guild of merchants who secretly trade in contraband. Named for their symbol, a golden bee."
     },
     {
@@ -134,13 +134,13 @@
     {
         "name": "Ironhook Prison",
         "rating": 4,
-        "action": 1,
+        "action": 0,
         "description": "Where many scoundrels spend the bulk of their lives. Several criminal organizations are run by convicts inside its walls."
     },
     {
         "name": "The Lampblacks",
         "rating": 2,
-        "action": 0,
+        "action": 2,
         "description": "The former lamp-lighter guild, turned to crime when their services were replaced by electric lights."
     },
     {
@@ -164,7 +164,7 @@
     {
         "name": "Ministry of Preservation",
         "rating": 5,
-        "action": 0,
+        "action": 2,
         "description": "The governmental body of the Imperium that oversees all transportation between cities and the disbursement of food and other vital resources."
     },
     {
@@ -176,7 +176,7 @@
     {
         "name": "Rail Jacks",
         "rating": 2,
-        "action": 1,
+        "action": 2,
         "description": "The men and women who protect the electro-trains of the imperium from the savage spirits of the deathlands. Have recently been making noises about forming a union."
     },
     {
@@ -200,25 +200,25 @@
     {
         "name": "The Silver Nails",
         "rating": 3,
-        "action": 2,
+        "action": 0,
         "description": "A company of Severosi mercenaries turned to crime when the war for Skovlan Unity ended. Renowned ghost killers."
     },
     {
         "name": "Skovlander Refugees",
         "rating": 3,
-        "action": 0,
+        "action": 2,
         "description": "Desperate survivors of the Unity War, forced to criminal opportunities when denied all others."
     },
     {
         "name": "Sparkwrights",
         "rating": 4,
-        "action": 1,
+        "action": 0,
         "description": "The engineers who maintain the lightning barriers. Also pioneers of new technology, often indulging in dangerous research."
     },
     {
         "name": "Spirit Wardens",
         "rating": 4,
-        "action": 0,
+        "action": 1,
         "description": "The bronzemasked hunters who destroy rogue spirits. Also run Bellweather Crematorium and research artifacts scavenged in the deathlands. Membership is secret."
     },
     {
@@ -236,7 +236,7 @@
     {
         "name": "The Weeping Lady",
         "rating": 2,
-        "action": 0,
+        "action": 2,
         "description": "A charity and pseudo-religion, honoring the first Lord Governor of Doskvol, Lady Devera, said to be a champion of the poor."
     },
     {

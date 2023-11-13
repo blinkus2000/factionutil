@@ -43,14 +43,17 @@ def get_faction_manager(json_file: str, relationship_csv: str) -> FactionManager
     return FactionManager(faction_table)
 
 
-def save_faction_manager(manager: FactionManager, json_file: str, relationship_csv: str) -> None:
+def save_faction_manager(manager: FactionManager, json_file: str, relationship_csv: str, events_txt: str) -> None:
     prep_file(relationship_csv)
     prep_file(json_file)
+    prep_file(events_txt)
     with open(relationship_csv, mode='w', newline='', encoding='utf-8') as csv_file:
         table: RelationshipTable = manager.faction_table.relationship_table
         save_to(table, csv_file)
     factions: FactionDict = manager.faction_table.factions
     save_factions(json_file, factions)
+    with open(events_txt, mode='w', newline='', encoding='utf-8') as text_file:
+        manager.saved_results
 
 
 def prep_file(a_file):

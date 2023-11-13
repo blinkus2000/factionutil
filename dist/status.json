@@ -1,0 +1,30 @@
+{
+    "3": {
+        "status": "Allies",
+        "description": "This faction will help you even if it’s not in their best interest to do so. They expect you to do the same for them."
+    },
+    "2": {
+        "status": "Friendly",
+        "description": "This faction will help you if it doesn’t create serious problems for them. They expect you to do the same."
+    },
+    "1": {
+        "status": "Helpful",
+        "description": "This faction will help you if it causes no problems or significant cost for them. They expect the same from you."
+    },
+    "0": {
+        "status": "Neutral",
+        "description": ""
+    },
+    "-1": {
+        "status": "Interfering",
+        "description": "This faction will look for opportunities to cause trouble for you (or profit from your misfortune) as long as it causes no problems or significant cost for them. They expect the same from you."
+    },
+    "-2": {
+        "status": "Hostile",
+        "description": "This faction will look for opportunities to hurt you as long as it doesn’t create serious problems for them. They expect you to do the same, and take precautions against you."
+    },
+    "-3": {
+        "status": "War",
+        "description": "This faction will go out of its way to hurt you even if it’s not in their best interest to do so. They expect you to do the same, and take precautions against you."
+    }
+}

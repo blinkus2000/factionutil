@@ -28,7 +28,7 @@ The Billhooks,Lord Scurlock,-1.0
 The Billhooks,The Lost,0.0
 The Billhooks,Ministry of Preservation,0.0
 The Billhooks,The Path of Echoes,-1.0
-The Billhooks,Rail Jacks,-3.0
+The Billhooks,Rail Jacks,-2.0
 The Billhooks,The Reconciled,0.0
 The Billhooks,The Red Sashes,0.0
 The Billhooks,Sailors,-0.5711842288558933
@@ -75,12 +75,12 @@ The Brigade,The Reconciled,0.0
 The Brigade,The Red Sashes,0.0
 The Brigade,Sailors,0.0
 The Brigade,The Silver Nails,-1.0
-The Brigade,Skovlander Refugees,0.0
+The Brigade,Skovlander Refugees,-0.08069315163758994
 The Brigade,Sparkwrights,0.0
 The Brigade,Spirit Wardens,0.0
 The Brigade,Ulf Ironborn,0.0
 The Brigade,The Unseen,0.0
-The Brigade,The Weeping Lady,-1.0
+The Brigade,The Weeping Lady,-1.037032436858734
 The Brigade,The Wraiths,0.0
 The Brigade,The Players,-1.0
 Bluecoats,The Billhooks,0.5
@@ -154,7 +154,7 @@ Cabbies,Lord Scurlock,1.0
 Cabbies,The Lost,0.0
 Cabbies,Ministry of Preservation,0.0
 Cabbies,The Path of Echoes,1.0
-Cabbies,Rail Jacks,-0.76511959869655
+Cabbies,Rail Jacks,-1.01511959869655
 Cabbies,The Reconciled,0.0
 Cabbies,The Red Sashes,1.0
 Cabbies,Sailors,2.3927960572139733
@@ -181,7 +181,7 @@ The Church of the Ecstasy of the Flesh,Dockers,0.0
 The Church of the Ecstasy of the Flesh,The Fog Hounds,0.0
 The Church of the Ecstasy of the Flesh,The Forgotten Gods,0.0
 The Church of the Ecstasy of the Flesh,The Foundation,0.0
-The Church of the Ecstasy of the Flesh,Gondoliers,0.0
+The Church of the Ecstasy of the Flesh,Gondoliers,-0.2230119049703294
 The Church of the Ecstasy of the Flesh,The Gray Cloaks,0.0
 The Church of the Ecstasy of the Flesh,The Grinders,0.0
 The Church of the Ecstasy of the Flesh,The Hive,0.0
@@ -190,11 +190,11 @@ The Church of the Ecstasy of the Flesh,Imperial Military,2.0
 The Church of the Ecstasy of the Flesh,Ink Rakes,0.0
 The Church of the Ecstasy of the Flesh,Inspectors,0.0
 The Church of the Ecstasy of the Flesh,Ironhook Prison,0.0
-The Church of the Ecstasy of the Flesh,The Lampblacks,0.0
+The Church of the Ecstasy of the Flesh,The Lampblacks,-0.18018887266302852
 The Church of the Ecstasy of the Flesh,Leviathan Hunters,0.0
 The Church of the Ecstasy of the Flesh,Lord Scurlock,1.0
 The Church of the Ecstasy of the Flesh,The Lost,0.0
-The Church of the Ecstasy of the Flesh,Ministry of Preservation,0.0
+The Church of the Ecstasy of the Flesh,Ministry of Preservation,1.6922794283118094
 The Church of the Ecstasy of the Flesh,The Path of Echoes,0.0
 The Church of the Ecstasy of the Flesh,Rail Jacks,0.0
 The Church of the Ecstasy of the Flesh,The Reconciled,0.0
@@ -265,7 +265,7 @@ The Crows,Dockers,-0.25
 The Crows,The Fog Hounds,0.0
 The Crows,The Forgotten Gods,0.0
 The Crows,The Foundation,0.0
-The Crows,Gondoliers,-0.018994294331014516
+The Crows,Gondoliers,0.09251165815415019
 The Crows,The Gray Cloaks,-1.0
 The Crows,The Grinders,-0.5
 The Crows,The Hive,1.0
@@ -274,13 +274,13 @@ The Crows,Imperial Military,0.0
 The Crows,Ink Rakes,0.0
 The Crows,Inspectors,1.0
 The Crows,Ironhook Prison,0.006866196004200575
-The Crows,The Lampblacks,-2.0
+The Crows,The Lampblacks,-1.9099055636684859
 The Crows,Leviathan Hunters,0.0
 The Crows,Lord Scurlock,0.0
 The Crows,The Lost,0.0
-The Crows,Ministry of Preservation,0.0
+The Crows,Ministry of Preservation,-0.8461397141559047
 The Crows,The Path of Echoes,0.0
-The Crows,Rail Jacks,-1.9209669039216846
+The Crows,Rail Jacks,-2.1709669039216846
 The Crows,The Reconciled,0.0
 The Crows,The Red Sashes,0.0
 The Crows,Sailors,0.0
@@ -413,7 +413,7 @@ The Dimmer Sisters,Sailors,-0.3927960572139733
 The Dimmer Sisters,The Silver Nails,0.05315306559642541
 The Dimmer Sisters,Skovlander Refugees,0.0
 The Dimmer Sisters,Sparkwrights,0.0
-The Dimmer Sisters,Spirit Wardens,1.0
+The Dimmer Sisters,Spirit Wardens,1.0054956208494212
 The Dimmer Sisters,Ulf Ironborn,1.0
 The Dimmer Sisters,The Unseen,-0.08538549712117671
 The Dimmer Sisters,The Weeping Lady,0.0
@@ -455,7 +455,7 @@ Dockers,Sailors,0.3927960572139733
 Dockers,The Silver Nails,-1.0
 Dockers,Skovlander Refugees,0.0
 Dockers,Sparkwrights,0.0
-Dockers,Spirit Wardens,0.0
+Dockers,Spirit Wardens,-0.010991241698842469
 Dockers,Ulf Ironborn,0.18636024925465744
 Dockers,The Unseen,0.17077099424235342
 Dockers,The Weeping Lady,0.0
@@ -497,7 +497,7 @@ The Fog Hounds,Sailors,0.0
 The Fog Hounds,The Silver Nails,0.03871876154066811
 The Fog Hounds,Skovlander Refugees,0.0
 The Fog Hounds,Sparkwrights,0.0
-The Fog Hounds,Spirit Wardens,0.0
+The Fog Hounds,Spirit Wardens,0.002747810424710617
 The Fog Hounds,Ulf Ironborn,2.1863602492546574
 The Fog Hounds,The Unseen,0.0
 The Fog Hounds,The Weeping Lady,0.0
@@ -559,7 +559,7 @@ The Foundation,Dockers,0.75
 The Foundation,The Fog Hounds,-2.0
 The Foundation,The Forgotten Gods,0.0
 The Foundation,The Foundation,0.0
-The Foundation,Gondoliers,0.018994294331014516
+The Foundation,Gondoliers,-0.09251165815415019
 The Foundation,The Gray Cloaks,-1.0
 The Foundation,The Grinders,0.0
 The Foundation,The Hive,0.028232500570303132
@@ -568,11 +568,11 @@ The Foundation,Imperial Military,0.0
 The Foundation,Ink Rakes,0.0
 The Foundation,Inspectors,0.0
 The Foundation,Ironhook Prison,0.0034330980021002877
-The Foundation,The Lampblacks,0.0
+The Foundation,The Lampblacks,-0.09009443633151426
 The Foundation,Leviathan Hunters,0.0
 The Foundation,Lord Scurlock,1.0
 The Foundation,The Lost,0.0
-The Foundation,Ministry of Preservation,0.0
+The Foundation,Ministry of Preservation,0.8461397141559047
 The Foundation,The Path of Echoes,0.0
 The Foundation,Rail Jacks,-1.0
 The Foundation,The Reconciled,0.15201442195320547
@@ -610,11 +610,11 @@ Gondoliers,Imperial Military,1.0
 Gondoliers,Ink Rakes,1.0
 Gondoliers,Inspectors,0.0
 Gondoliers,Ironhook Prison,1.0
-Gondoliers,The Lampblacks,0.0
+Gondoliers,The Lampblacks,-0.18018887266302852
 Gondoliers,Leviathan Hunters,0.0
 Gondoliers,Lord Scurlock,0.0
 Gondoliers,The Lost,1.0
-Gondoliers,Ministry of Preservation,0.0
+Gondoliers,Ministry of Preservation,1.6922794283118094
 Gondoliers,The Path of Echoes,0.0
 Gondoliers,Rail Jacks,0.0
 Gondoliers,The Reconciled,0.0
@@ -663,12 +663,12 @@ The Gray Cloaks,The Reconciled,-0.15201442195320547
 The Gray Cloaks,The Red Sashes,-2.0
 The Gray Cloaks,Sailors,-1.0
 The Gray Cloaks,The Silver Nails,-0.008448421206522838
-The Gray Cloaks,Skovlander Refugees,1.0
+The Gray Cloaks,Skovlander Refugees,1.08069315163759
 The Gray Cloaks,Sparkwrights,0.0
-The Gray Cloaks,Spirit Wardens,-1.0
+The Gray Cloaks,Spirit Wardens,-0.9972521895752894
 The Gray Cloaks,Ulf Ironborn,0.0
 The Gray Cloaks,The Unseen,-0.08538549712117671
-The Gray Cloaks,The Weeping Lady,0.0
+The Gray Cloaks,The Weeping Lady,0.03703243685873392
 The Gray Cloaks,The Wraiths,0.0
 The Gray Cloaks,The Players,1.75
 The Grinders,The Billhooks,-0.5
@@ -685,7 +685,7 @@ The Grinders,Dockers,-0.75
 The Grinders,The Fog Hounds,0.0
 The Grinders,The Forgotten Gods,0.0
 The Grinders,The Foundation,0.0
-The Grinders,Gondoliers,-0.9810057056689855
+The Grinders,Gondoliers,-1.0925116581541503
 The Grinders,The Gray Cloaks,-1.0
 The Grinders,The Grinders,0.0
 The Grinders,The Hive,0.0
@@ -694,13 +694,13 @@ The Grinders,Imperial Military,0.0
 The Grinders,Ink Rakes,-1.8651727017361195
 The Grinders,Inspectors,0.0
 The Grinders,Ironhook Prison,0.010299294006300863
-The Grinders,The Lampblacks,0.0
+The Grinders,The Lampblacks,-0.09009443633151426
 The Grinders,Leviathan Hunters,0.0
 The Grinders,Lord Scurlock,0.0
 The Grinders,The Lost,0.0
-The Grinders,Ministry of Preservation,0.0
+The Grinders,Ministry of Preservation,0.8461397141559047
 The Grinders,The Path of Echoes,1.0
-The Grinders,Rail Jacks,-3.0
+The Grinders,Rail Jacks,-3
 The Grinders,The Reconciled,1.0
 The Grinders,The Red Sashes,0.0
 The Grinders,Sailors,-0.3927960572139733
@@ -727,7 +727,7 @@ The Hive,Dockers,1.0
 The Hive,The Fog Hounds,1.0
 The Hive,The Forgotten Gods,0.0
 The Hive,The Foundation,0.0
-The Hive,Gondoliers,-0.018994294331014516
+The Hive,Gondoliers,0.09251165815415019
 The Hive,The Gray Cloaks,0.0
 The Hive,The Grinders,0.0
 The Hive,The Hive,0.0
@@ -736,11 +736,11 @@ The Hive,Imperial Military,0.0
 The Hive,Ink Rakes,1.0
 The Hive,Inspectors,0.0
 The Hive,Ironhook Prison,-1.0
-The Hive,The Lampblacks,1.0
+The Hive,The Lampblacks,1.0900944363315141
 The Hive,Leviathan Hunters,0.0
 The Hive,Lord Scurlock,1.0
 The Hive,The Lost,1.0
-The Hive,Ministry of Preservation,0.0
+The Hive,Ministry of Preservation,-0.8461397141559047
 The Hive,The Path of Echoes,0.0
 The Hive,Rail Jacks,0.0
 The Hive,The Reconciled,0.15201442195320547
@@ -749,7 +749,7 @@ The Hive,Sailors,0.0
 The Hive,The Silver Nails,0.008448421206522838
 The Hive,Skovlander Refugees,0.0
 The Hive,Sparkwrights,1.0
-The Hive,Spirit Wardens,1.0618223766375516
+The Hive,Spirit Wardens,1.059074566212841
 The Hive,Ulf Ironborn,0.0
 The Hive,The Unseen,0.0
 The Hive,The Weeping Lady,0.0
@@ -833,7 +833,7 @@ Imperial Military,Sailors,0.0
 Imperial Military,The Silver Nails,0.0
 Imperial Military,Skovlander Refugees,0.0
 Imperial Military,Sparkwrights,-0.8860233165133609
-Imperial Military,Spirit Wardens,1.0
+Imperial Military,Spirit Wardens,0.9972521895752894
 Imperial Military,Ulf Ironborn,-0.18636024925465744
 Imperial Military,The Unseen,0.0
 Imperial Military,The Weeping Lady,0.0
@@ -853,7 +853,7 @@ Ink Rakes,Dockers,0.0
 Ink Rakes,The Fog Hounds,0.0
 Ink Rakes,The Forgotten Gods,0.0
 Ink Rakes,The Foundation,0.0
-Ink Rakes,Gondoliers,-0.018994294331014516
+Ink Rakes,Gondoliers,0.09251165815415019
 Ink Rakes,The Gray Cloaks,0.0
 Ink Rakes,The Grinders,0.0
 Ink Rakes,The Hive,0.028232500570303132
@@ -862,11 +862,11 @@ Ink Rakes,Imperial Military,1.0
 Ink Rakes,Ink Rakes,0.0
 Ink Rakes,Inspectors,0.0
 Ink Rakes,Ironhook Prison,0.0
-Ink Rakes,The Lampblacks,0.0
+Ink Rakes,The Lampblacks,0.09009443633151426
 Ink Rakes,Leviathan Hunters,-1.0
 Ink Rakes,Lord Scurlock,0.0
 Ink Rakes,The Lost,-1.0
-Ink Rakes,Ministry of Preservation,-1.0
+Ink Rakes,Ministry of Preservation,-1.8461397141559046
 Ink Rakes,The Path of Echoes,-1.0
 Ink Rakes,Rail Jacks,0.0
 Ink Rakes,The Reconciled,1.0
@@ -917,7 +917,7 @@ Inspectors,Sailors,2.0
 Inspectors,The Silver Nails,0.0
 Inspectors,Skovlander Refugees,0.0
 Inspectors,Sparkwrights,0.0
-Inspectors,Spirit Wardens,0.0
+Inspectors,Spirit Wardens,0.002747810424710617
 Inspectors,Ulf Ironborn,0.0
 Inspectors,The Unseen,0.9146145028788233
 Inspectors,The Weeping Lady,0.0
@@ -952,14 +952,14 @@ Ironhook Prison,Lord Scurlock,0.0
 Ironhook Prison,The Lost,0.0
 Ironhook Prison,Ministry of Preservation,0.0
 Ironhook Prison,The Path of Echoes,1.0
-Ironhook Prison,Rail Jacks,-1.9209669039216846
+Ironhook Prison,Rail Jacks,-2.1709669039216846
 Ironhook Prison,The Reconciled,-1.1520144219532056
 Ironhook Prison,The Red Sashes,0.0
 Ironhook Prison,Sailors,0.0
 Ironhook Prison,The Silver Nails,0.0
 Ironhook Prison,Skovlander Refugees,0.0
 Ironhook Prison,Sparkwrights,0.8860233165133609
-Ironhook Prison,Spirit Wardens,0.0
+Ironhook Prison,Spirit Wardens,0.002747810424710617
 Ironhook Prison,Ulf Ironborn,0.0
 Ironhook Prison,The Unseen,0.8292290057576466
 Ironhook Prison,The Weeping Lady,0.0
@@ -979,7 +979,7 @@ The Lampblacks,Dockers,-0.25
 The Lampblacks,The Fog Hounds,0.0
 The Lampblacks,The Forgotten Gods,0.0
 The Lampblacks,The Foundation,0.0
-The Lampblacks,Gondoliers,-0.018994294331014516
+The Lampblacks,Gondoliers,0.09251165815415019
 The Lampblacks,The Gray Cloaks,0.0
 The Lampblacks,The Grinders,-1.0
 The Lampblacks,The Hive,0.0
@@ -992,7 +992,7 @@ The Lampblacks,The Lampblacks,0.0
 The Lampblacks,Leviathan Hunters,0.0
 The Lampblacks,Lord Scurlock,1.0
 The Lampblacks,The Lost,-1.0
-The Lampblacks,Ministry of Preservation,0.0
+The Lampblacks,Ministry of Preservation,-0.8461397141559047
 The Lampblacks,The Path of Echoes,0.0
 The Lampblacks,Rail Jacks,-1.1558473052251346
 The Lampblacks,The Reconciled,0.0
@@ -1041,12 +1041,12 @@ Leviathan Hunters,The Reconciled,0.0
 Leviathan Hunters,The Red Sashes,2.0
 Leviathan Hunters,Sailors,0.3927960572139733
 Leviathan Hunters,The Silver Nails,0.9806406192296659
-Leviathan Hunters,Skovlander Refugees,0.0
+Leviathan Hunters,Skovlander Refugees,-0.1613863032751799
 Leviathan Hunters,Sparkwrights,0.8860233165133609
 Leviathan Hunters,Spirit Wardens,0.0
 Leviathan Hunters,Ulf Ironborn,-1.0
 Leviathan Hunters,The Unseen,-1.9146145028788233
-Leviathan Hunters,The Weeping Lady,0.0
+Leviathan Hunters,The Weeping Lady,-0.07406487371746784
 Leviathan Hunters,The Wraiths,0.0
 Leviathan Hunters,The Players,-2.0
 Lord Scurlock,The Billhooks,0.0
@@ -1085,7 +1085,7 @@ Lord Scurlock,Sailors,0.0
 Lord Scurlock,The Silver Nails,-0.008448421206522838
 Lord Scurlock,Skovlander Refugees,0.0
 Lord Scurlock,Sparkwrights,0.8860233165133609
-Lord Scurlock,Spirit Wardens,-0.06182237663755169
+Lord Scurlock,Spirit Wardens,-0.06457018706226231
 Lord Scurlock,Ulf Ironborn,0.0
 Lord Scurlock,The Unseen,0.0
 Lord Scurlock,The Weeping Lady,-1.0
@@ -1125,12 +1125,12 @@ The Lost,The Reconciled,0.15201442195320547
 The Lost,The Red Sashes,1.0
 The Lost,Sailors,0.0
 The Lost,The Silver Nails,0.0
-The Lost,Skovlander Refugees,0.0
+The Lost,Skovlander Refugees,0.08069315163758994
 The Lost,Sparkwrights,-0.8860233165133609
-The Lost,Spirit Wardens,1.0
+The Lost,Spirit Wardens,0.9972521895752894
 The Lost,Ulf Ironborn,0.0
 The Lost,The Unseen,0.0
-The Lost,The Weeping Lady,0.0
+The Lost,The Weeping Lady,0.03703243685873392
 The Lost,The Wraiths,1.0
 The Lost,The Players,1.0
 Ministry of Preservation,The Billhooks,-0.5
@@ -1147,7 +1147,7 @@ Ministry of Preservation,Dockers,-0.75
 Ministry of Preservation,The Fog Hounds,0.0
 Ministry of Preservation,The Forgotten Gods,-1.0
 Ministry of Preservation,The Foundation,0.0
-Ministry of Preservation,Gondoliers,0.018994294331014516
+Ministry of Preservation,Gondoliers,-0.09251165815415019
 Ministry of Preservation,The Gray Cloaks,0.0
 Ministry of Preservation,The Grinders,0.0
 Ministry of Preservation,The Hive,0.0
@@ -1156,7 +1156,7 @@ Ministry of Preservation,Imperial Military,0.0
 Ministry of Preservation,Ink Rakes,-1.0
 Ministry of Preservation,Inspectors,0.0
 Ministry of Preservation,Ironhook Prison,-0.0034330980021002877
-Ministry of Preservation,The Lampblacks,-1.0
+Ministry of Preservation,The Lampblacks,-1.0900944363315141
 Ministry of Preservation,Leviathan Hunters,0.0
 Ministry of Preservation,Lord Scurlock,0.0
 Ministry of Preservation,The Lost,0.0
@@ -1167,12 +1167,12 @@ Ministry of Preservation,The Reconciled,-0.15201442195320547
 Ministry of Preservation,The Red Sashes,0.0
 Ministry of Preservation,Sailors,0.3927960572139733
 Ministry of Preservation,The Silver Nails,0.0
-Ministry of Preservation,Skovlander Refugees,0.0
+Ministry of Preservation,Skovlander Refugees,-0.08069315163758994
 Ministry of Preservation,Sparkwrights,-1.8860233165133609
 Ministry of Preservation,Spirit Wardens,0.0
 Ministry of Preservation,Ulf Ironborn,0.0
 Ministry of Preservation,The Unseen,1.0853854971211767
-Ministry of Preservation,The Weeping Lady,1.0
+Ministry of Preservation,The Weeping Lady,0.9629675631412661
 Ministry of Preservation,The Wraiths,1.0
 Ministry of Preservation,The Players,-1.25
 The Path of Echoes,The Billhooks,0.0
@@ -1211,7 +1211,7 @@ The Path of Echoes,Sailors,0.0
 The Path of Echoes,The Silver Nails,0.008448421206522838
 The Path of Echoes,Skovlander Refugees,0.0
 The Path of Echoes,Sparkwrights,0.0
-The Path of Echoes,Spirit Wardens,0.0
+The Path of Echoes,Spirit Wardens,0.002747810424710617
 The Path of Echoes,Ulf Ironborn,0.0
 The Path of Echoes,The Unseen,-2.0
 The Path of Echoes,The Weeping Lady,0.0
@@ -1253,7 +1253,7 @@ Rail Jacks,Sailors,-1.7855921144279465
 Rail Jacks,The Silver Nails,-0.9890890404361887
 Rail Jacks,Skovlander Refugees,0.0
 Rail Jacks,Sparkwrights,0.0
-Rail Jacks,Spirit Wardens,-0.06182237663755169
+Rail Jacks,Spirit Wardens,-0.06457018706226231
 Rail Jacks,Ulf Ironborn,1.0
 Rail Jacks,The Unseen,0.34154198848470685
 Rail Jacks,The Weeping Lady,0.0
@@ -1295,7 +1295,7 @@ The Reconciled,Sailors,0.0
 The Reconciled,The Silver Nails,0.010910959563811218
 The Reconciled,Skovlander Refugees,0.0
 The Reconciled,Sparkwrights,0.0
-The Reconciled,Spirit Wardens,0.0
+The Reconciled,Spirit Wardens,0.005495620849421234
 The Reconciled,Ulf Ironborn,1.0
 The Reconciled,The Unseen,0.0
 The Reconciled,The Weeping Lady,0.0
@@ -1315,7 +1315,7 @@ The Red Sashes,Dockers,-0.25
 The Red Sashes,The Fog Hounds,0.0
 The Red Sashes,The Forgotten Gods,0.0
 The Red Sashes,The Foundation,1.0
-The Red Sashes,Gondoliers,-1.0189942943310144
+The Red Sashes,Gondoliers,-0.9074883418458497
 The Red Sashes,The Gray Cloaks,0.0
 The Red Sashes,The Grinders,0.0
 The Red Sashes,The Hive,-0.028232500570303132
@@ -1324,13 +1324,13 @@ The Red Sashes,Imperial Military,0.0
 The Red Sashes,Ink Rakes,-1.0
 The Red Sashes,Inspectors,0.0
 The Red Sashes,Ironhook Prison,0.006866196004200575
-The Red Sashes,The Lampblacks,0.0
+The Red Sashes,The Lampblacks,0.09009443633151426
 The Red Sashes,Leviathan Hunters,-1.0
 The Red Sashes,Lord Scurlock,0.0
 The Red Sashes,The Lost,0.0
-The Red Sashes,Ministry of Preservation,0.0
+The Red Sashes,Ministry of Preservation,-0.8461397141559047
 The Red Sashes,The Path of Echoes,0.0
-The Red Sashes,Rail Jacks,-1.9209669039216846
+The Red Sashes,Rail Jacks,-2.1709669039216846
 The Red Sashes,The Reconciled,0.0
 The Red Sashes,The Red Sashes,0.0
 The Red Sashes,Sailors,0.0
@@ -1357,7 +1357,7 @@ Sailors,Dockers,-1.0
 Sailors,The Fog Hounds,0.0
 Sailors,The Forgotten Gods,1.0
 Sailors,The Foundation,-1.0
-Sailors,Gondoliers,-0.018994294331014516
+Sailors,Gondoliers,0.09251165815415019
 Sailors,The Gray Cloaks,0.0
 Sailors,The Grinders,0.0
 Sailors,The Hive,0.0
@@ -1366,20 +1366,20 @@ Sailors,Imperial Military,0.0
 Sailors,Ink Rakes,0.0
 Sailors,Inspectors,-0.11191699375264652
 Sailors,Ironhook Prison,0.0
-Sailors,The Lampblacks,0.0
+Sailors,The Lampblacks,0.09009443633151426
 Sailors,Leviathan Hunters,0.0
 Sailors,Lord Scurlock,0.0
 Sailors,The Lost,0.0
-Sailors,Ministry of Preservation,-1.0
+Sailors,Ministry of Preservation,-1.8461397141559046
 Sailors,The Path of Echoes,0.0
-Sailors,Rail Jacks,0.4697608026069
+Sailors,Rail Jacks,-0.030239197393099992
 Sailors,The Reconciled,-0.15201442195320547
 Sailors,The Red Sashes,0.0
 Sailors,Sailors,0.0
 Sailors,The Silver Nails,-1.0
 Sailors,Skovlander Refugees,0.0
 Sailors,Sparkwrights,1.0
-Sailors,Spirit Wardens,0.0
+Sailors,Spirit Wardens,0.002747810424710617
 Sailors,Ulf Ironborn,0.0
 Sailors,The Unseen,0.0
 Sailors,The Weeping Lady,0.0
@@ -1399,7 +1399,7 @@ The Silver Nails,Dockers,0.25
 The Silver Nails,The Fog Hounds,0.0
 The Silver Nails,The Forgotten Gods,0.0
 The Silver Nails,The Foundation,0.0
-The Silver Nails,Gondoliers,-0.018994294331014516
+The Silver Nails,Gondoliers,0.09251165815415019
 The Silver Nails,The Gray Cloaks,-1.0
 The Silver Nails,The Grinders,-1.0
 The Silver Nails,The Hive,0.0
@@ -1408,11 +1408,11 @@ The Silver Nails,Imperial Military,0.0
 The Silver Nails,Ink Rakes,0.1348272982638805
 The Silver Nails,Inspectors,-0.9720207515618384
 The Silver Nails,Ironhook Prison,-1.0034330980021002
-The Silver Nails,The Lampblacks,-1.0
+The Silver Nails,The Lampblacks,-0.9099055636684857
 The Silver Nails,Leviathan Hunters,0.0
 The Silver Nails,Lord Scurlock,0.0
 The Silver Nails,The Lost,0.0
-The Silver Nails,Ministry of Preservation,1.0
+The Silver Nails,Ministry of Preservation,0.15386028584409528
 The Silver Nails,The Path of Echoes,0.0
 The Silver Nails,Rail Jacks,1.0
 The Silver Nails,The Reconciled,1.0
@@ -1441,7 +1441,7 @@ Skovlander Refugees,Dockers,0.25
 Skovlander Refugees,The Fog Hounds,0.0
 Skovlander Refugees,The Forgotten Gods,0.0
 Skovlander Refugees,The Foundation,0.0
-Skovlander Refugees,Gondoliers,-0.9810057056689855
+Skovlander Refugees,Gondoliers,-1.0925116581541503
 Skovlander Refugees,The Gray Cloaks,1.0
 Skovlander Refugees,The Grinders,0.0
 Skovlander Refugees,The Hive,-0.028232500570303132
@@ -1450,11 +1450,11 @@ Skovlander Refugees,Imperial Military,0.0
 Skovlander Refugees,Ink Rakes,1.0
 Skovlander Refugees,Inspectors,-0.9720207515618384
 Skovlander Refugees,Ironhook Prison,-0.0034330980021002877
-Skovlander Refugees,The Lampblacks,0.0
+Skovlander Refugees,The Lampblacks,-0.09009443633151426
 Skovlander Refugees,Leviathan Hunters,0.0
 Skovlander Refugees,Lord Scurlock,-1.0
 Skovlander Refugees,The Lost,0.0
-Skovlander Refugees,Ministry of Preservation,0.0
+Skovlander Refugees,Ministry of Preservation,0.8461397141559047
 Skovlander Refugees,The Path of Echoes,1.0
 Skovlander Refugees,Rail Jacks,1.0
 Skovlander Refugees,The Reconciled,0.0
@@ -1466,7 +1466,7 @@ Skovlander Refugees,Sparkwrights,-1.0
 Skovlander Refugees,Spirit Wardens,1.0
 Skovlander Refugees,Ulf Ironborn,0.0
 Skovlander Refugees,The Unseen,0.08538549712117671
-Skovlander Refugees,The Weeping Lady,0.0
+Skovlander Refugees,The Weeping Lady,0.03703243685873392
 Skovlander Refugees,The Wraiths,0.0
 Skovlander Refugees,The Players,1.5
 Sparkwrights,The Billhooks,-0.5
@@ -1483,7 +1483,7 @@ Sparkwrights,Dockers,-1.25
 Sparkwrights,The Fog Hounds,0.0
 Sparkwrights,The Forgotten Gods,0.0
 Sparkwrights,The Foundation,0.0
-Sparkwrights,Gondoliers,-1.075977177324058
+Sparkwrights,Gondoliers,-0.6299533673833992
 Sparkwrights,The Gray Cloaks,0.0
 Sparkwrights,The Grinders,-1.25
 Sparkwrights,The Hive,-1.0
@@ -1492,11 +1492,11 @@ Sparkwrights,Imperial Military,0.0
 Sparkwrights,Ink Rakes,2.0
 Sparkwrights,Inspectors,1.0
 Sparkwrights,Ironhook Prison,1.0034330980021002
-Sparkwrights,The Lampblacks,0.0
+Sparkwrights,The Lampblacks,0.36037774532605704
 Sparkwrights,Leviathan Hunters,0.0
 Sparkwrights,Lord Scurlock,0.0
 Sparkwrights,The Lost,0.0
-Sparkwrights,Ministry of Preservation,0.0
+Sparkwrights,Ministry of Preservation,-3
 Sparkwrights,The Path of Echoes,0.0
 Sparkwrights,Rail Jacks,-1.0
 Sparkwrights,The Reconciled,-0.15201442195320547
@@ -1505,7 +1505,7 @@ Sparkwrights,Sailors,0.0
 Sparkwrights,The Silver Nails,-0.008448421206522838
 Sparkwrights,Skovlander Refugees,-1.0
 Sparkwrights,Sparkwrights,0.0
-Sparkwrights,Spirit Wardens,0.0
+Sparkwrights,Spirit Wardens,0.002747810424710617
 Sparkwrights,Ulf Ironborn,-0.18636024925465744
 Sparkwrights,The Unseen,-0.08538549712117671
 Sparkwrights,The Weeping Lady,-1.0
@@ -1587,12 +1587,12 @@ Ulf Ironborn,The Reconciled,-1.0
 Ulf Ironborn,The Red Sashes,0.0
 Ulf Ironborn,Sailors,0.0
 Ulf Ironborn,The Silver Nails,0.07743752308133622
-Ulf Ironborn,Skovlander Refugees,-1.0
+Ulf Ironborn,Skovlander Refugees,-0.9193068483624101
 Ulf Ironborn,Sparkwrights,0.0
 Ulf Ironborn,Spirit Wardens,0.0
 Ulf Ironborn,Ulf Ironborn,0.0
 Ulf Ironborn,The Unseen,1.0
-Ulf Ironborn,The Weeping Lady,0.0
+Ulf Ironborn,The Weeping Lady,0.03703243685873392
 Ulf Ironborn,The Wraiths,0.0
 Ulf Ironborn,The Players,1.25
 The Unseen,The Billhooks,1.0
@@ -1624,7 +1624,7 @@ The Unseen,Lord Scurlock,0.0
 The Unseen,The Lost,1.0
 The Unseen,Ministry of Preservation,0.0
 The Unseen,The Path of Echoes,0.0
-The Unseen,Rail Jacks,-2.3907277065285846
+The Unseen,Rail Jacks,-2.1407277065285846
 The Unseen,The Reconciled,0.0
 The Unseen,The Red Sashes,1.0
 The Unseen,Sailors,-1.7855921144279465
@@ -1671,9 +1671,9 @@ The Weeping Lady,The Reconciled,-1.1520144219532056
 The Weeping Lady,The Red Sashes,0.0
 The Weeping Lady,Sailors,0.0
 The Weeping Lady,The Silver Nails,1.0
-The Weeping Lady,Skovlander Refugees,0.0
+The Weeping Lady,Skovlander Refugees,-0.08069315163758994
 The Weeping Lady,Sparkwrights,-0.8860233165133609
-The Weeping Lady,Spirit Wardens,1.0
+The Weeping Lady,Spirit Wardens,1.0027478104247107
 The Weeping Lady,Ulf Ironborn,0.0
 The Weeping Lady,The Unseen,0.0
 The Weeping Lady,The Weeping Lady,0.0
@@ -1713,12 +1713,12 @@ The Wraiths,The Reconciled,0.15201442195320547
 The Wraiths,The Red Sashes,2.0
 The Wraiths,Sailors,-0.3927960572139733
 The Wraiths,The Silver Nails,0.03871876154066811
-The Wraiths,Skovlander Refugees,1.0
+The Wraiths,Skovlander Refugees,0.9193068483624101
 The Wraiths,Sparkwrights,0.8860233165133609
 The Wraiths,Spirit Wardens,-1.0
 The Wraiths,Ulf Ironborn,2.0
 The Wraiths,The Unseen,-0.08538549712117671
-The Wraiths,The Weeping Lady,0.0
+The Wraiths,The Weeping Lady,-0.03703243685873392
 The Wraiths,The Wraiths,0.0
 The Wraiths,The Players,-1.5
 The Players,The Billhooks,0.0
@@ -1755,11 +1755,11 @@ The Players,The Reconciled,0.30402884390641094
 The Players,The Red Sashes,0.0
 The Players,Sailors,-0.3927960572139733
 The Players,The Silver Nails,-0.019359380770334056
-The Players,Skovlander Refugees,0.0
+The Players,Skovlander Refugees,0.3227726065503598
 The Players,Sparkwrights,0.0
-The Players,Spirit Wardens,0.0
+The Players,Spirit Wardens,-0.002747810424710617
 The Players,Ulf Ironborn,-1.0
 The Players,The Unseen,-0.17077099424235342
-The Players,The Weeping Lady,-3.0
+The Players,The Weeping Lady,-2.8518702525650643
 The Players,The Wraiths,0.0
 The Players,The Players,0.0

@@ -6,8 +6,8 @@ class Model:
     def __init__(self):
         self.update_output: Callable[[list[str]], None] = None
         self.selected_manager = None
-        self.managers = ['placeholderA','placeholderB','placeholderC']
-        self.current_output_list = self.managers
+        self.managers = []
+        self.current_output_list = []
         self.list_updater: Callable[[list[str]], None] = None
         self.current_manager_holder: Callable[[Tuple[str, dict[tuple[str, str], float]]], None] = None
         self.selected_faction = None

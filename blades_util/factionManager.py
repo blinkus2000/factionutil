@@ -29,6 +29,7 @@ class FactionManager:
         self.faction_table = faction_table
         # Initialize the weights for each faction
         self.weights = self.initialize_weights()
+        self.saved_results: list[str] = None
 
     def initialize_weights(self) -> Dict[str, Tuple[str, str]]:
         # Create a dictionary to hold the weights for each faction
