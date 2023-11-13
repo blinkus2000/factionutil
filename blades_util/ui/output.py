@@ -5,7 +5,7 @@ from blades_util.ui.model import Model
 
 
 class Output:
-    def __init__(self, m: Model, r: tk.Tk):
+    def __init__(self, m: Model, r: tk.Frame):
         self.menu = None
         self.text_area = None
         self.model = m
@@ -41,5 +41,7 @@ class Output:
 
 if __name__ == '__main__':
     root = tk.Tk()
-    output = Output(Model(), root)
+    f = tk.Frame(root)
+    f.pack(fill=tk.BOTH, expand=True)
+    output = Output(Model(), f)
     root.mainloop()

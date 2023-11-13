@@ -7,7 +7,7 @@ from blades_util.ui.model import Model
 
 class Buttons:
 
-    def __init__(self, c: Controller, m: Model, r: tk.Tk):
+    def __init__(self, c: Controller, m: Model, r: tk.Frame):
         self.root = r
         self.controller = c
         self.model = m
@@ -40,13 +40,15 @@ class Buttons:
         new_manager_name = diag.askstring("Input", "Enter New Manager Name:", parent=self.root)
         if new_manager_name:  # Check if the input is not None or empty
             self.controller.save_manager_as(new_manager_name)
+            self.model.update_managers(self.controller.get_available_managers())
 
     def handle_load(self):
         if self.model.selected_manager:
-            self.controller.load_manager(self.model.selected_manager)
+            faction= self.controller.load_manager(self.model.selected_manager)
+            self.model.update_current_manager(self.model.selected_manager, faction)
         else:
-            msg.showerror("No Manager Selected!","Please Select A Manager")
-            
+            msg.showerror("No Manager Selected!", "Please Select A Manager")
+
     def handle_act_on_selected(self):
         faction_str = self.model.get_selected()
         if faction_str:
@@ -63,7 +65,9 @@ class Buttons:
             def on_confirm():
                 value = int(spinbox.get())
                 if value != 0:
-                    self.controller.player_adjust_faction(faction_str, value)
+                    faction = self.controller.player_adjust_faction(faction_str, value)
+                    self.controller.manager_name
+                    self.model.update_current_manager(name=self.controller.manager_name, factions=faction)
                 popup.destroy()
 
             # Confirm button
@@ -71,14 +75,19 @@ class Buttons:
             confirm_button.pack(pady=10)
 
     def handle_regenerate(self):
-        self.model.update_current_manager(self.controller.generate_new_manager())
+        name, factions = self.controller.generate_new_manager()
+        self.model.update_current_manager(name, factions)
 
     def handle_advance_week(self):
+        results,table = self.controller.advance_one_week()
         self.model.update_current_manager(name=None,
-                                          factions=self.controller.advance_one_week())
+                                          factions=table)
+        self.model.current_output(results)
 
 
 if __name__ == "__main__":
-    app = tk.Tk()
-    Buttons(Controller(), Model(), app)
-    app.mainloop()
+    root = tk.Tk()
+    f = tk.Frame(root)
+    f.pack(fill=tk.BOTH, expand=True)
+    Buttons(Controller(), Model(), f)
+    root.mainloop()

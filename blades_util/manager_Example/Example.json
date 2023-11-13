@@ -1,0 +1,254 @@
+[
+    {
+        "name": "The Billhooks",
+        "rating": 2,
+        "action": 0,
+        "description": "A tough gang of thugs wielding hatchets and meat hooks."
+    },
+    {
+        "name": "The Brigade",
+        "rating": 2,
+        "action": 0,
+        "description": "The fire-fighters of the city. Beloved for their life-saving heroism, or reviled for their looting and extortion rackets. Also known as “Sallies” (from “salamanders,” their ancient name)."
+    },
+    {
+        "name": "Bluecoats",
+        "rating": 3,
+        "action": 0,
+        "description": "The City Watch of Duskwall, tasked with upholding the law. Known as the meanest gang in the city. Corrupt, violent, and cruel."
+    },
+    {
+        "name": "Cabbies",
+        "rating": 2,
+        "action": 0,
+        "description": "The public coach operators. They also breed the large Akorosian goats used to pull the carriages. An impressive gossip network."
+    },
+    {
+        "name": "The Church of the Ecstasy of the Flesh",
+        "rating": 4,
+        "action": 0,
+        "description": "The “state religion,” if there is such a thing. They honor the life of the body and abhor the corrupted spirit world. Essentially a secret society."
+    },
+    {
+        "name": "The Circle of Flame",
+        "rating": 3,
+        "action": 0,
+        "description": "A secret society of antiquarians and scholars; cover for extortion, graft, vice, and murder."
+    },
+    {
+        "name": "The Crows",
+        "rating": 2,
+        "action": 2,
+        "description": "An old gang with new leadership. Known for running illegal games of chance and extortion rackets."
+    },
+    {
+        "name": "Cyphers",
+        "rating": 2,
+        "action": 2,
+        "description": "The messenger guild of the city. Cyphers swear sacred oaths of secrecy—never revealing the contents of their messages or the identities of their clients—or so they claim."
+    },
+    {
+        "name": "Deathlands Scavengers",
+        "rating": 2,
+        "action": 2,
+        "description": "Convicts from Ironhook and desperate freelancers who roam the wasteland beyond the lightning barriers."
+    },
+    {
+        "name": "The Dimmer Sisters",
+        "rating": 2,
+        "action": 0,
+        "description": "Housebound recluses with an occult reputation."
+    },
+    {
+        "name": "Dockers",
+        "rating": 3,
+        "action": 0,
+        "description": "The hard-bitten laborers who work the docks."
+    },
+    {
+        "name": "The Fog Hounds",
+        "rating": 1,
+        "action": 0,
+        "description": "A crew of rough smugglers looking for a patron."
+    },
+    {
+        "name": "The Forgotten Gods",
+        "rating": 3,
+        "action": 0,
+        "description": "Cults that attempt to follow the old ways from before the cataclysm, doing the bidding of demons and darker things."
+    },
+    {
+        "name": "The Foundation",
+        "rating": 4,
+        "action": 0,
+        "description": "The powerful ancient order of architects and builders. Many of their enemies have disappeared behind the brick and mortar of Doskvol."
+    },
+    {
+        "name": "Gondoliers",
+        "rating": 3,
+        "action": 0,
+        "description": "The guild of canal boat operators. Venerated by ancient tradition. Said to know occult secrets (many things are submerged in the Dusk)."
+    },
+    {
+        "name": "The Gray Cloaks",
+        "rating": 2,
+        "action": 0,
+        "description": "Former Bluecoats who turned to crime."
+    },
+    {
+        "name": "The Grinders",
+        "rating": 2,
+        "action": 0,
+        "description": "A vicious gang of former dockers and leviathan blood refinery workers from Skovlan."
+    },
+    {
+        "name": "The Hive",
+        "rating": 4,
+        "action": 0,
+        "description": "A guild of merchants who secretly trade in contraband. Named for their symbol, a golden bee."
+    },
+    {
+        "name": "The Horde",
+        "rating": 3,
+        "action": 0,
+        "description": "A mass of hollows, all united in some fell purpose, controlled by an unknown power."
+    },
+    {
+        "name": "Imperial Military",
+        "rating": 6,
+        "action": 0,
+        "description": "The armed forces of the Imperium stationed in Doskvol. Garrisons are posted at Gaddoc Rail Station, aboard the naval destroyer Paragon, and at the Lord Governor's stronghold (about 250 troops in total)."
+    },
+    {
+        "name": "Ink Rakes",
+        "rating": 2,
+        "action": 2,
+        "description": "The journalists, muckrakers, and newspaper publishers of Doskvol."
+    },
+    {
+        "name": "Inspectors",
+        "rating": 3,
+        "action": 2,
+        "description": "The criminal investigators of the City Watch. They have a reputation for ethics and integrity (no one likes them). They present evidence for prosecutions to the city magistrates."
+    },
+    {
+        "name": "Ironhook Prison",
+        "rating": 4,
+        "action": 0,
+        "description": "Where many scoundrels spend the bulk of their lives. Several criminal organizations are run by convicts inside its walls."
+    },
+    {
+        "name": "The Lampblacks",
+        "rating": 2,
+        "action": 0,
+        "description": "The former lamp-lighter guild, turned to crime when their services were replaced by electric lights."
+    },
+    {
+        "name": "Leviathan Hunters",
+        "rating": 5,
+        "action": 0,
+        "description": "The daring captains and crews that grapple with titanic demons of the Void Sea to drain their blood for processing into electroplasm."
+    },
+    {
+        "name": "Lord Scurlock",
+        "rating": 3,
+        "action": 0,
+        "description": "An ancient noble, said to be immortal, like the Emperor. Possibly a vampire. Obsessed with arcane secrets."
+    },
+    {
+        "name": "The Lost",
+        "rating": 1,
+        "action": 0,
+        "description": "A group of street-toughs and ex-soldiers dedicated to protecting the downtrodden and the hopeless."
+    },
+    {
+        "name": "Ministry of Preservation",
+        "rating": 5,
+        "action": 0,
+        "description": "The governmental body of the Imperium that oversees all transportation between cities and the disbursement of food and other vital resources."
+    },
+    {
+        "name": "The Path of Echoes",
+        "rating": 3,
+        "action": 0,
+        "description": "A mystery cult that borders on open rebellion against spirit laws. They revere the ancients, and seek to gain knowledge from the past— including consorting with ghosts."
+    },
+    {
+        "name": "Rail Jacks",
+        "rating": 2,
+        "action": 0,
+        "description": "The men and women who protect the electro-trains of the imperium from the savage spirits of the deathlands. Have recently been making noises about forming a union."
+    },
+    {
+        "name": "The Reconciled",
+        "rating": 3,
+        "action": 0,
+        "description": "An association of spirits who have not gone feral with the passage of time."
+    },
+    {
+        "name": "The Red Sashes",
+        "rating": 2,
+        "action": 0,
+        "description": "Originally an Iruvian school of swordsmanship, expanded into criminal endeavors."
+    },
+    {
+        "name": "Sailors",
+        "rating": 3,
+        "action": 0,
+        "description": "The captains and crews for merchant and Imperial Navy ships."
+    },
+    {
+        "name": "The Silver Nails",
+        "rating": 3,
+        "action": 0,
+        "description": "A company of Severosi mercenaries turned to crime when the war for Skovlan Unity ended. Renowned ghost killers."
+    },
+    {
+        "name": "Skovlander Refugees",
+        "rating": 3,
+        "action": 0,
+        "description": "Desperate survivors of the Unity War, forced to criminal opportunities when denied all others."
+    },
+    {
+        "name": "Sparkwrights",
+        "rating": 4,
+        "action": 0,
+        "description": "The engineers who maintain the lightning barriers. Also pioneers of new technology, often indulging in dangerous research."
+    },
+    {
+        "name": "Spirit Wardens",
+        "rating": 4,
+        "action": 0,
+        "description": "The bronzemasked hunters who destroy rogue spirits. Also run Bellweather Crematorium and research artifacts scavenged in the deathlands. Membership is secret."
+    },
+    {
+        "name": "Ulf Ironborn",
+        "rating": 1,
+        "action": 1,
+        "description": "A brutal Skovlander, newly arrived in Doskvol, fighting everyone for turf."
+    },
+    {
+        "name": "The Unseen",
+        "rating": 4,
+        "action": 0,
+        "description": "An insidious criminal enterprise with secret membership. Thought to pull the strings of the entire underworld."
+    },
+    {
+        "name": "The Weeping Lady",
+        "rating": 2,
+        "action": 0,
+        "description": "A charity and pseudo-religion, honoring the first Lord Governor of Doskvol, Lady Devera, said to be a champion of the poor."
+    },
+    {
+        "name": "The Wraiths",
+        "rating": 2,
+        "action": 0,
+        "description": "A mysterious crew of masked thieves and spies."
+    },
+    {
+        "name": "The Players",
+        "rating": 0,
+        "action": 0,
+        "description": "The crew run by the players. They have a legitimate business in Six Towers."
+    }
+]

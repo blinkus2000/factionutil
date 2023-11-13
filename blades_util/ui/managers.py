@@ -5,7 +5,7 @@ from blades_util.ui.model import Model
 
 
 class Managers:
-    def __init__(self, m: Model, r: tk.Tk):
+    def __init__(self, m: Model, r: tk.Frame):
         self.model = m
         self.root = r
         self.current_list = []
@@ -32,6 +32,8 @@ class Managers:
 
 
 if __name__ == '__main__':
-    app = tk.Tk()
-    managers = Managers(Model(), app)
-    app.mainloop()
+    root = tk.Tk()
+    f = tk.Frame(root)
+    f.pack(fill=tk.BOTH, expand=True)
+    managers = Managers(Model(), f)
+    root.mainloop()

@@ -9,6 +9,7 @@ from blades_util.utils import convert_dict, get_row_as_list
 class Table:
     def __init__(self, c: Controller, m: Model, r: tk.Frame):
         super().__init__()
+        self.hsb = None
         self.faction_tuple = None
         self.factions = None
         self.frame = r
@@ -19,13 +20,14 @@ class Table:
         self.dict_data = None
 
         self.frame.tree = None
-        self.create_table_from_data(self.controller.generate_new_manager())
+        self.vsb = None
+        nm, mgr = self.controller.generate_new_manager()
+        self.create_table_from_data(nm, mgr)
         self.model.set_current_manager_holder(self.create_table_from_data)
 
-    def create_table_from_data(self, manager_data: tuple[str, dict[tuple[str, str], float]]):
-        self.name, self.dict_data = manager_data
-        #if self.name:
-        #    self.root.title(self.name)
+    def create_table_from_data(self, name: str, manager_data: dict[tuple[str, str], float]):
+        self.name = name
+        self.dict_data = manager_data
         self.factions = convert_dict(self.dict_data)
         self.faction_tuple = tuple(self.factions)
         style = ttk.Style(self.frame)
@@ -40,15 +42,24 @@ class Table:
         else:
             # Treeview has not been created yet, so create it
             self.frame.tree = ttk.Treeview(self.frame)
+            # Create a vertical scrollbar
+            self.vsb = ttk.Scrollbar(self.frame, orient="vertical", command=self.frame.tree.yview)
+            self.frame.tree.configure(yscrollcommand=self.vsb.set)
+            # Pack the treeview and the scrollbar
+            self.vsb.pack(side='right', fill='y')
+            # Create a horizontal scrollbar
+            self.hsb = ttk.Scrollbar(self.frame, orient="horizontal", command=self.frame.tree.xview)
+            self.frame.tree.configure(xscrollcommand=self.hsb.set)
+            self.hsb.pack(side='bottom', fill='x')
 
         # Define columns
         faction_tuple = ('faction_name',) + self.faction_tuple
         self.frame.tree['columns'] = faction_tuple
 
         # Format columns
-        self.frame.tree.column("#0", width=0, stretch=tk.YES)
+        self.frame.tree.column("#0", width=0, stretch=tk.NO)
         max_len = max(len(faction) for faction in self.factions)
-        self.frame.tree.column("faction_name", anchor=tk.W, width=max_len * 6)
+        self.frame.tree.column("faction_name", anchor=tk.W, width=max_len * 6, stretch=tk.NO)
 
         # Create headings
         self.frame.tree.heading("#0", text="", anchor=tk.W)
@@ -66,12 +77,6 @@ class Table:
             row = (faction,) + tuple(as_list)
             self.frame.tree.insert("", tk.END, values=row)
 
-            # Create a vertical scrollbar
-        vsb = ttk.Scrollbar(self.frame, orient="vertical", command=self.frame.tree.yview)
-        self.frame.tree.configure(yscrollcommand=vsb.set)
-
-        # Pack the treeview and the scrollbar
-        vsb.pack(side='right', fill='y')
         self.frame.tree.pack(side='left', fill='both', expand=True)
         self.frame.tree.bind('<<TreeviewSelect>>', self.on_select)
 

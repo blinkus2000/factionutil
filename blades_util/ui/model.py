@@ -12,7 +12,7 @@ class Model:
         self.current_manager_holder: Callable[[Tuple[str, dict[tuple[str, str], float]]], None] = None
         self.selected_faction = None
 
-    def set_current_manager_holder(self, updater: Callable[[Tuple[str, dict[tuple[str, str], float]]], None]):
+    def set_current_manager_holder(self, updater: Callable[[str, dict[tuple[str, str], float]], None]):
         self.current_manager_holder = updater
 
     def update_current_manager(self, name: str, factions: dict[tuple[str, str], float]) -> None:
