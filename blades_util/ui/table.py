@@ -3,7 +3,7 @@ from tkinter import ttk
 
 from blades_util.controller import Controller
 from blades_util.ui.model import Model
-from blades_util.utils import convert_dict, get_row_as_list
+from blades_util.utils import convert_dict, get_row_as_list, convert_to_nested_dict
 
 
 class Table:
@@ -29,7 +29,7 @@ class Table:
     def create_table_from_data(self, name: str, manager_data: dict[tuple[str, str], float]):
         self.name = name
         self.dict_data = manager_data
-        self.factions = convert_dict(self.dict_data)
+        self.factions = convert_dict(self.dict_data, first_str="The Players")
         self.faction_tuple = tuple(self.factions)
         self.style = ttk.Style(self.frame)
         self.style.configure("Treeview.Heading", font=('Helvetica', 8))  # Set a smaller font size
@@ -73,9 +73,12 @@ class Table:
             self.frame.tree.column(faction, width=len(faction) * char_width, anchor=tk.CENTER)
             #if the faction str == "The Players" I would like to set the background of that cell to be orange
         # Add data to the treeview
-        for faction in self.factions:
-            as_list = get_row_as_list(faction, self.dict_data)
-            row = (faction,) + tuple(as_list)
+        the_table = convert_to_nested_dict(self.dict_data)
+        for faction_row in self.factions:
+            as_list = []
+            for faction_col in self.factions:
+                as_list.append(the_table[faction_row][faction_col])
+            row = (faction_row,) + tuple(as_list)
             self.frame.tree.insert("", tk.END, values=row)
             # if the faction str == "The Players" I would like to set the background of that cell to be orange
         self.frame.tree.pack(side='left', fill='both', expand=True)
