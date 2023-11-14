@@ -60,7 +60,10 @@ class Buttons:
             popup.geometry("200x100")  # Adjust the size as needed
 
             # Create a Spinbox for integer input
-            spinbox = tk.Spinbox(popup, from_=-10, to=10, increment=1, value=0)
+            spin_value = tk.IntVar(popup,value=0)
+
+            # Create a Spinbox linked to the variable
+            spinbox = tk.Spinbox(popup, from_=-10, to=10, increment=1, textvariable=spin_value)
             spinbox.pack(pady=10)
 
             # Function to handle the confirmation

@@ -9,8 +9,8 @@ from blades_util.utils import convert_dict, get_row_as_list, convert_to_nested_d
 class Table:
     def __init__(self, c: Controller, m: Model, r: tk.Frame):
         super().__init__()
+        self.combobox = None
         self.style = None
-        self.hsb = None
         self.faction_tuple = None
         self.factions = None
         self.frame = r
@@ -41,6 +41,10 @@ class Table:
             for i in self.frame.tree.get_children():
                 self.frame.tree.delete(i)
         else:
+            self.combobox: ttk.Combobox = ttk.Combobox(self.frame)
+            self.combobox['values'] = self.faction_tuple
+            self.combobox.bind('<<ComboboxSelected>>', self.on_combo_select)
+            self.combobox.pack(side='left', fill='x', expand=False)
             # Treeview has not been created yet, so create it
             self.frame.tree = ttk.Treeview(self.frame)
             # Create a vertical scrollbar
@@ -49,47 +53,51 @@ class Table:
             # Pack the treeview and the scrollbar
             self.vsb.pack(side='right', fill='y')
             # Create a horizontal scrollbar
-            self.hsb = ttk.Scrollbar(self.frame, orient="horizontal", command=self.frame.tree.xview)
-            self.frame.tree.configure(xscrollcommand=self.hsb.set)
-            self.hsb.pack(side='bottom', fill='x')
+            self.combobox.current(0)
+        self.build_tree_view()
 
+    def build_tree_view(self):
+        selected_faction: str = self.combobox.get()
         # Define columns
-        faction_tuple = ('faction_name',) + self.faction_tuple
+        faction_tuple = ('faction_name', 'their_status_with_you', 'your_status_with_them')
+        faction_name, their_status_with_you, your_status_with_them = faction_tuple
         self.frame.tree['columns'] = faction_tuple
-
         # Format columns
         self.frame.tree.column("#0", width=0, stretch=tk.NO)
-        max_len = max(len(faction) for faction in self.factions)
-        self.frame.tree.column("faction_name", anchor=tk.W, width=max_len * 6, stretch=tk.NO)
 
+        self.frame.tree.column(faction_name, anchor=tk.W, width=100, stretch=tk.NO)
         # Create headings
         self.frame.tree.heading("#0", text="", anchor=tk.W)
-        self.frame.tree.heading("faction_name", text="Faction Name", anchor=tk.W)
-        # Calculate the maximum length of faction names
-        # Assuming you have a fixed width for each character and a fixed height for each row
-        char_width = 5  # This is an arbitrary number; you'll need to adjust it based on your font
-        for faction in self.factions:
-            self.frame.tree.heading(faction, text=faction, anchor=tk.CENTER)
-            self.frame.tree.column(faction, width=len(faction) * char_width, anchor=tk.CENTER)
-            #if the faction str == "The Players" I would like to set the background of that cell to be orange
+        self.frame.tree.heading(faction_name, text="Faction Name", anchor=tk.W)
+
+        self.frame.tree.heading(their_status_with_you, text=f'Their Status With {selected_faction}', anchor=tk.CENTER)
+        self.frame.tree.column(their_status_with_you, width=100, anchor=tk.CENTER)
+
+        self.frame.tree.heading(your_status_with_them, text=f'{selected_faction} Status With Them', anchor=tk.CENTER)
+        self.frame.tree.column(your_status_with_them, width=100, anchor=tk.CENTER)
+
+        # if the faction str == "The Players" I would like to set the background of that cell to be orange
         # Add data to the treeview
         the_table = convert_to_nested_dict(self.dict_data)
+
         for faction_row in self.factions:
-            as_list = []
-            for faction_col in self.factions:
-                as_list.append(the_table[faction_row][faction_col])
-            row = (faction_row,) + tuple(as_list)
+            row = (faction_row, the_table[selected_faction][faction_row], the_table[faction_row][selected_faction])
             self.frame.tree.insert("", tk.END, values=row)
             # if the faction str == "The Players" I would like to set the background of that cell to be orange
         self.frame.tree.pack(side='left', fill='both', expand=True)
         self.frame.tree.bind('<<TreeviewSelect>>', self.on_select)
 
     def on_select(self, event):
+        pass
         # The event object will contain information about the selection
-        selected_items = self.frame.tree.selection()  # This returns the selected items' IDs
-        for item_id in selected_items:
-            item = self.frame.tree.item(item_id)
-            self.model.set_selected(item['values'][0])
+        # selected_items = self.frame.tree.selection()  # This returns the selected items' IDs
+        # for item_id in selected_items:
+        #    item = self.frame.tree.item(item_id)
+        #    self.model.set_selected(item['values'][0])
+
+    def on_combo_select(self, event):
+        self.model.set_selected(self.combobox.get())
+        self.create_table()
 
 
 if __name__ == "__main__":
