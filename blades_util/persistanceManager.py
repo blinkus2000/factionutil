@@ -1,5 +1,6 @@
 import csv
 import os.path
+from pathlib import Path
 from typing import IO, List, Dict, Tuple
 
 from blades_util.faction import FactionDict, save_factions
@@ -13,8 +14,9 @@ def save_to(table: 'RelationshipTable', csv_file: IO[str]) -> None:
     # Write the header
     writer.writerow(['Source', 'Target', 'Opinion'])
     # Write the data
-    for (source, target), opinion in table.table.items():
-        writer.writerow([source, target, opinion])
+    for key_i in table.table.keys():
+        for key_j in table.table[key_i].keys():
+            writer.writerow([key_i, key_j, table.table[key_i][key_j]])
 
 
 def load_from(csv_file: IO[str]) -> 'RelationshipTable':
@@ -23,11 +25,13 @@ def load_from(csv_file: IO[str]) -> 'RelationshipTable':
     next(reader, None)
     # Initialize an empty RelationshipTable
     keys: List[str] = []
-    table_data: Dict[Tuple[str, str], float] = {}
+    table_data: Dict[str, Dict[str, float]] = {}
     for row in reader:
         source, target, opinion = row
         keys.extend([source, target])
-        table_data[(source, target)] = float(opinion)
+        if source not in table_data:
+            table_data[source] = {}
+        table_data[source][target] = float(opinion)
     # Remove duplicates from keys
     unique_keys = list(set(keys))
     # Create a new RelationshipTable
@@ -36,14 +40,20 @@ def load_from(csv_file: IO[str]) -> 'RelationshipTable':
     return new_table
 
 
-def get_faction_manager(json_file: str, relationship_csv: str) -> FactionManager:
+def get_faction_manager(json_file: str, relationship_csv: str, events_txt: Path) -> FactionManager:
     with open(relationship_csv, mode='r', newline='', encoding='utf-8') as csv_file:
         relationship_table = load_from(csv_file)
     faction_table = FactionTable(json_file, relationship_table)
-    return FactionManager(faction_table)
+    try:
+        splitlines = events_txt.read_text(encoding='utf-8').splitlines()
+    except:
+        splitlines = []
+    manager = FactionManager(faction_table)
+    manager.saved_results: list[str] = splitlines
+    return manager
 
 
-def save_faction_manager(manager: FactionManager, json_file: str, relationship_csv: str, events_txt: str) -> None:
+def save_faction_manager(manager: FactionManager, json_file: str, relationship_csv: str, events_txt: Path) -> None:
     prep_file(relationship_csv)
     prep_file(json_file)
     prep_file(events_txt)
@@ -52,8 +62,9 @@ def save_faction_manager(manager: FactionManager, json_file: str, relationship_c
         save_to(table, csv_file)
     factions: FactionDict = manager.faction_table.factions
     save_factions(json_file, factions)
-    with open(events_txt, mode='w', newline='', encoding='utf-8') as text_file:
-        manager.saved_results
+    if manager.saved_results:
+        text_to_write = '\n'.join(manager.saved_results)
+        events_txt.write_text(text_to_write, encoding='utf-8')
 
 
 def prep_file(a_file):

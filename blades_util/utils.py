@@ -1,10 +1,10 @@
 from typing import Dict, Tuple, List
 
 
-def convert_dict(dict_data: Dict[Tuple[str, str], float], first_str: str = None) -> List[str]:
+def convert_dict(dict_data: Dict[str, Dict[str, float]], first_str: str = None) -> List[str]:
     first_strings = set()
 
-    for (first, _), _ in dict_data.items():
+    for first in dict_data.keys():
         first_strings.add(first)
 
     sorted_list = sorted(first_strings)
@@ -16,18 +16,13 @@ def convert_dict(dict_data: Dict[Tuple[str, str], float], first_str: str = None)
     return sorted_list
 
 
-def get_row_as_list(row: str, dict_data: Dict[Tuple[str, str], float]) -> List[float]:
+def get_row_as_list(row: str, dict_data: Dict[str, Dict[str, float]]) -> List[float]:
     returnVal = []
-    for (first, second), value in dict_data.items():
-        if first == row:
-            returnVal.append(value)
+    dict_row = dict_data[row]
+    for key, value in dict_row.items():
+        returnVal.append(value)
     return returnVal
 
 
-def convert_to_nested_dict(input_dict: dict[tuple[str, str], float]) -> dict[str, dict[str, float]]:
-    nested_dict = {}
-    for (key1, key2), value in input_dict.items():
-        if key1 not in nested_dict:
-            nested_dict[key1] = {}
-        nested_dict[key1][key2] = value
-    return nested_dict
+def convert_to_nested_dict(input_dict: dict[str, dict[str, float]]) -> dict[str, dict[str, float]]:
+    return input_dict

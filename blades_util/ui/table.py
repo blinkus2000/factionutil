@@ -3,7 +3,7 @@ from tkinter import ttk
 
 from blades_util.controller import Controller
 from blades_util.ui.model import Model
-from blades_util.utils import convert_dict, get_row_as_list, convert_to_nested_dict
+from blades_util.utils import convert_dict
 
 
 class Table:
@@ -78,7 +78,7 @@ class Table:
 
         # if the faction str == "The Players" I would like to set the background of that cell to be orange
         # Add data to the treeview
-        the_table = convert_to_nested_dict(self.dict_data)
+        the_table = self.dict_data
 
         for faction_row in self.factions:
             row = (faction_row, the_table[selected_faction][faction_row], the_table[faction_row][selected_faction])

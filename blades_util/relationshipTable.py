@@ -23,28 +23,33 @@ class RelationshipTable:
     def __init__(self, keys: List[str], initializer: Callable[[str, str], float] = None):
         self.keys = keys
         self.initializer: Callable[[str, str], float] = initializer if initializer else lambda a, b: 0
-        self.table: Dict[Tuple[str, str], float] = {}
+        self.table: Dict[str, Dict[str, float]] = {}
         self.update_all(self.initializer)
 
     def update_all(self, initializer: Callable[[str, str], float]) -> None:
         for key_i in self.keys:
+            if key_i not in self.table:
+                self.table[key_i] = {}
             for key_j in self.keys:
-                self.table[(key_i, key_j)] = 0.0 if key_i == key_j else initializer(key_i, key_j)
+                value = 0.0 if key_i == key_j else initializer(key_i, key_j)
+                self.set(key_i, key_j, value)
 
     def get(self, key1: str, key2: str) -> float:
-        return self.table.get((key1, key2), 0.0)
+        return self.table[key1][key2]
 
     def set(self, key1: str, key2: str, val: float) -> None:
         clamped_val = max(-3, min(val, 3))
-        self.table[(key1, key2)] = 0.0 if key1 == key2 else clamped_val
+        self.table[key1][key2] = 0.0 if key1 == key2 else clamped_val
 
     def clone(self) -> 'RelationshipTable':
         new_table = RelationshipTable(self.keys, self.initializer)
         new_table.table = self.table.copy()
+        for row in new_table.table.keys():
+            new_table.table[row] = self.table[row].copy()
         return new_table
 
     def updateOpinion(self, actingOn: str, beingActedUpon: str, incomingOpinion: float) -> Tuple[
-        str, str, float, Dict[Tuple[str, str], float]]:
+        str, str, float, Dict[str, Dict[str, float]]]:
         oldTable = self.clone()
         self.actUpon(actingOn, beingActedUpon, incomingOpinion)
 
@@ -57,15 +62,17 @@ class RelationshipTable:
         totalResult = self.diff(oldTable)
         return actingOn, beingActedUpon, incomingOpinion, totalResult
 
-    def diff(self, oldTable: 'RelationshipTable') -> Dict[Tuple[str, str], float]:
-        result: Dict[Tuple[str, str], float] = {}
+    def diff(self, oldTable: 'RelationshipTable') -> Dict[str, Dict[str, float]]:
+        result: Dict[str, Dict[str, float]] = {}
         for key1 in self.keys:
+            if key1 not in result:
+                result[key1] = {}
             for key2 in self.keys:
                 newVal = self.get(key1, key2)
                 oldVal = oldTable.get(key1, key2)
                 delta = newVal - oldVal
                 if delta != 0:
-                    result[(key1, key2)] = delta
+                    result[key1][key2] = delta
         return result
 
     def actUpon(self, actingOn: str, beingActedUpon: str, amount: float) -> None:

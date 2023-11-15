@@ -102,7 +102,7 @@ class TestRelationshipTable:
         assert actingOn == "A"
         assert beingActedUpon == "B"
         assert amount == 2
-        assert diff_results == {("B", "A"): 2}
+        assert diff_results["B"]["A"] == 2
 
         # Let's make C dislike B by setting their relationship value to -3
         table.set("C", "B", -3)
@@ -122,7 +122,8 @@ class TestRelationshipTable:
         assert actingOn == "A"
         assert beingActedUpon == "B"
         assert amount == -1
-        assert diff_results == {("B", "A"): -1, ("C", "A"): 0.75}
+        assert diff_results['B']['A'] == -1
+        assert diff_results['C']['A'] == 0.75
 
     def test_howOthersFeelAboutMe(self):
         keys = ["A", "B", "C"]

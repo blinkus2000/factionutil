@@ -50,22 +50,16 @@ class Controller:
         csv_file, json_file, events_file = get_files_from_name(self.manager_name)
         # Assuming save_faction_manager is a method that takes the manager instance,
         # and paths to the json and csv files as strings.
-        save_faction_manager(self.manager, json_file.as_posix(), csv_file.as_posix(), events_file.as_posix())
-        if self.manager.saved_results:
-            text_to_write = '\n'.join(self.manager.saved_results)
-            events_file.write_text(text_to_write, encoding='utf-8')
+        save_faction_manager(self.manager, json_file.as_posix(), csv_file.as_posix(), events_file)
+
 
     # from the list of available managers (populated by get_available_managers()) if a player selects that manager, it will repopulate the grid
     def load_manager(self, name: str) -> Dict[Tuple[str, str], float]:
         csv_file, json_file, text_file = get_files_from_name(name)
-        self.manager = get_faction_manager(json_file.as_posix(), csv_file.as_posix())
+        self.manager = get_faction_manager(json_file.as_posix(), csv_file.as_posix(),text_file)
         self.manager_name = name
-        try:
-            splitlines = text_file.read_text(encoding='utf-8').splitlines()
-        except:
-            splitlines = []
-        self.manager.saved_results: list[str] = splitlines
-        return self.manager.faction_table.relationship_table.table.copy()
+
+        return self.manager.faction_table.relationship_table.clone().table
 
     # used to populate the available managers selectable list
     def get_available_managers(self) -> List[str]:

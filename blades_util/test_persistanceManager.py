@@ -1,4 +1,6 @@
 import os
+from pathlib import Path
+
 import pytest
 from blades_util.factionManager import FactionManager
 from blades_util.factionTable import FactionTable
@@ -8,6 +10,8 @@ from blades_util.relationshipTable import RelationshipTable
 JSON_PATH = 'factions.json'  # do not edit or change this file
 TEST_JSON_PATH = 'test_factions.json'
 TEST_CSV_FILE = 'test_relationship_table.csv'
+TEST_EVENTS_FILE = 'test_events.txt'
+TEST_EVENTS_PATH = Path(TEST_EVENTS_FILE)
 
 
 def cleanup_test_path():
@@ -15,6 +19,8 @@ def cleanup_test_path():
         os.remove(TEST_JSON_PATH)
     if os.path.exists(TEST_CSV_FILE):
         os.remove(TEST_CSV_FILE)
+    if os.path.exists(TEST_EVENTS_FILE):
+        os.remove(TEST_EVENTS_FILE)
 
 
 class TestPersistence:
@@ -38,19 +44,23 @@ class TestPersistence:
 
     def test_save_load_faction_manager(self, manager):
         # Save the current state of the manager to JSON and CSV files
-        save_faction_manager(manager, TEST_JSON_PATH, TEST_CSV_FILE)
+        save_faction_manager(manager, TEST_JSON_PATH, TEST_CSV_FILE, TEST_EVENTS_PATH)
 
         # Check that the files were created
         assert os.path.exists(TEST_JSON_PATH)
         assert os.path.exists(TEST_CSV_FILE)
+        assert os.path.exists(TEST_EVENTS_FILE)
 
         # Load the saved state and compare with the original
         with open(TEST_CSV_FILE, 'r', newline='', encoding='utf-8') as csv_file:
             loaded_table = load_from(csv_file)
-            assert loaded_table == manager.faction_table.relationship_table
+            for key_i in loaded_table.table.keys():
+                columns = loaded_table.table[key_i]
+                for key_j in columns.keys():
+                    assert loaded_table.table[key_i][key_j] == manager.faction_table.relationship_table.table[key_i][key_j]
 
         # Use the get_faction_manager function to create a FactionManager
-        new_manager = get_faction_manager(JSON_PATH, TEST_CSV_FILE)
+        new_manager = get_faction_manager(JSON_PATH, TEST_CSV_FILE,TEST_EVENTS_PATH)
         # Check if the manager was created successfully
         assert isinstance(new_manager, FactionManager)
         # Further checks can be added to verify the contents of the manager
